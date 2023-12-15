@@ -11,70 +11,38 @@
 </head>
 
 <body>
-  <header class="bg-gray-800 text-white">
-    <nav class="container mx-auto py-4">
-      <div class="flex justify-between items-center">
-        <div class="flex items-center">
-          <div id="logo" class="w-10 h-10 bg-white rounded-full"></div>
-          <h1 id="tituloprincipal" class="ml-4 text-2xl font-bold">IES Augusto Cup</h1>
-        </div>
-        <ul class="flex">
-          <li class="mr-6">
-            <div>Inicio</div>
-          </li>
-          <li class="mr-6 group">
-            <div>Equipos</div>
-            <ul class="pl-4 hidden group-hover:block">
-              <!-- Teams -->
-              <li>Equipo 1</li>
-              <!-- Add other teams as needed -->
-            </ul>
-          </li>
-          <li class="mr-6 group">
-            <div>Organización</div>
-            <ul class="pl-4 hidden group-hover:block">
-              <li>Comisión de organización</li>
-              <li>Retos</li>
-            </ul>
-          </li>
-          <li class="mr-6 group">
-            <div>Torneo</div>
-            <ul class="pl-4 hidden group-hover:block">
-              <li>
-                <div>Torneo solidario</div>
-              </li>
-              <li>
-                <div>Torneo deportivo</div>
-                <ul class="pl-4">
-                  <li>Sistema de competición</li>
-                  <li>Clasificación</li>
-                  <li>Resultados</li>
-                  <li>Galería</li>
+  <header>
+    <nav class="bg-red-800 text-white">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between p-4">
+          <div id="logo" class="text-2xl font-bold">IES Augusto Cup</div>
+          <h1 id="tituloprincipal" class="text-2xl font-bold">IES Augusto Cup</h1>
+          <ul class="flex space-x-4">
+            <li class="relative group">
+              <div class="cursor-pointer">Inicio</div>
+            </li>
+            <li class="relative group">
+              <div class="cursor-pointer">Equipos
+                <ul class="absolute hidden bg-gray-800 text-white p-2 space-y-2">
+                  <!-- Add teams dynamically based on your data -->
+                  <li>Equipo 1</li>
+                  <li>Equipo 2</li>
+                  <!-- ... -->
+                  <li>Equipo 10</li>
                 </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="mr-6">
-            <div>Objetivos</div>
-            <ul class="pl-4">
-              <li>Generales</li>
-              <li>ODS</li>
-            </ul>
-          </li>
-          <li class="mr-6">
-            <div>Colaboraciones</div>
-            <ul class="pl-4">
-              <li>Apoyos al proyecto</li>
-              <li>Patrocinadores</li>
-            </ul>
-          </li>
-          <li class="mr-6">
-            <div>Contacto</div>
-          </li>
-          <li class="mr-6">
-            <div>F&Q</div>
-          </li>
-        </ul>
+              </div>
+            </li>
+            <li class="relative group">
+              <div class="cursor-pointer">Organización
+                <ul class="absolute hidden bg-gray-800 text-white p-2 space-y-2">
+                  <li>Comisión de organización</li>
+                  <li>Retos</li>
+                </ul>
+              </div>
+            </li>
+            <!-- Repeat the pattern for other menu items -->
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
