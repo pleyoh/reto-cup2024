@@ -1,0 +1,28 @@
+# Archivos de compilación
+*.o
+*.out
+*.dll
+*.exe
+*.class
+
+# Archivos temporales
+*.log
+*.swp
+*~
+
+# Carpetas generadas por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Entornos y lenguajes específicos
+node_modules/
+vendor/
+.idea/
+.vscode/
+
+# Archivos de configuración locales
+*.env
+
+# Dependencias de gestores de paquetes
+npm-debug.log
+yarn-error.log
