@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 95%;
+        }
+
+        equipos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        tarjeta {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            width: 200px;
+            height: fit-content;
+            border: 2px cornflowerblue solid;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        tarjeta * {
+            border: 1px cornflowerblue solid;
+            border-collapse: collapse;
+        }
+
+        tarjeta a {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <equipos>
+    
+        <!-- Copiar tantas tarjetas como equipos, modificando el enlace de la foto grupal y el enlace del nombre del equipo -->
+        <tarjeta>
+            <img src="./res/img/equipo_prueba.png" alt="Foto Grupal Buenarda">
+            <a href="Ruta/de/equipo.html">Nombre del equipo</a>
+        </tarjeta>
+    </equipos>
+
+</body>
+
+</html>
