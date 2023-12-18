@@ -45,7 +45,7 @@ footer img {
 #portada {
   width: 100%;
   height: 800px;
-  background: url("../img/Portada.jpeg") no-repeat;
+  background: url("../img/Portada.jpg") no-repeat;
   background-size: cover;
   margin-bottom: 50px;
   display: flex;
