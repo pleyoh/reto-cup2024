@@ -1,134 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipo X</title>
+    <!-- Enlace al CSS de Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-        <header class="bg-gray-800 text-white">
-            <nav class="container mx-auto py-4">
-              <ul class="flex">
-                <li class="mr-6">
-                  <div>Inicio</div>
-                </li>
-                <li class="mr-6">
-                  <div>Equipos</div>
-                  <ul class="pl-4">
-                    <!-- Teams -->
-                    <li>Equipo 1</li>
-                    <!-- Add other teams as needed -->
-                  </ul>
-                </li>
-                <li class="mr-6">
-                  <div>Organización</div>
-                  <ul class="pl-4">
-                    <li>Comisión de organización</li>
-                    <li>Retos</li>
-                  </ul>
-                </li>
-                <li class="mr-6">
-                  <div>Torneo</div>
-                  <ul class="pl-4">
-                    <li>
-                      <div>Torneo solidario</div>
-                    </li>
-                    <li>
-                      <div>Torneo deportivo</div>
-                      <ul class="pl-4">
-                        <li>Sistema de competición</li>
-                        <li>Clasificación</li>
-                        <li>Resultados</li>
-                        <li>Galería</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="mr-6">
-                  <div>Objetivos</div>
-                  <ul class="pl-4">
-                    <li>Generales</li>
-                    <li>ODS</li>
-                  </ul>
-                </li>
-                <li class="mr-6">
-                  <div>Colaboraciones</div>
-                  <ul class="pl-4">
-                    <li>Apoyos al proyecto</li>
-                    <li>Patrocinadores</li>
-                  </ul>
-                </li>
-                <li class="mr-6">
-                  <div>Contacto</div>
-                </li>
-                <li class="mr-6">
-                  <div>F&Q</div>
-                </li>
+<<<<<<< HEAD
+  <header class="d-flex justify-content-between bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <!-- Logo de la izquierda -->
+      <img src="./res/img/logoleon.png" alt="Mini Logo" class="logo-nav">
+
+      <div class="container-fluid">
+        <!-- Enlace de la pagina principal -->
+        <a class="navbar-brand" href="./index-bootstrap.html">IES Augusto Cup</a>
+
+        <!-- Boton del desplegable -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Inicio de los elementos del menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+
+            <!-- Lista de equipos -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Equipos
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Equipo 1</a></li>
+                <li><a class="dropdown-item" href="#">Equipo 2</a></li>
+
+                <!-- Agregar equipos a conveniencia -->
               </ul>
-              <div class="mt-4">
-                <div class="flex items-center">
-                  <div class="w-10 h-10 bg-white rounded-full"></div>
-                  <h1 class="ml-4 text-2xl font-bold">IES Augusto Cup</h1>
-                </div>
-              </div>
-            </nav>
-          </header>
+            </li>
+
+            <!-- Lista de Organizacion -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Organizacion
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Comisión de organización</a></li>
+                <li><a class="dropdown-item" href="#">Retos</a></li>
+
+              </ul>
+            </li>
+            <!-- Lista de Torneo -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-auto-close="outside"
+                data-bs-toggle="dropdown" aria-expanded="false">Torneo
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Torneo solidario</a></li>
+
+                <li class="dropstart">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Torneo deportivo</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sistema de competición</a></li>
+                    <li><a class="dropdown-item" href="#">Clasificación</a></li>
+                    <li><a class="dropdown-item" href="#">Resultados</a></li>
+                    <li><a class="dropdown-item" href="#">Galería</a></li>
+                  </ul>
+                </li>
+                <!-- Lista de Torneo nosq-->
+                <!-- Elementos del sub menu -->
+              </ul>
+            </li>
+
+            <!-- Lista de noseq -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Objetivos
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Generales</a></li>
+                <li><a class="dropdown-item" href="#">ODS</a></li>
+
+                <!-- Agregar equipos a conveniencia -->
+              </ul>
+            </li>
+
+            <!-- Lista de noseq 2-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Colaboraciones
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Apoyos al proyecto</a></li>
+                <li><a class="dropdown-item" href="#">Patrocinadores</a></li>
+
+                <!-- Agregar equipos a conveniencia -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">F&Q</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
           <main>
             <div>
                 <img src="res/img/imgEquipo1.jpeg" alt="imgEquipo">
+=======
+    <!-- Navbar de Bootstrap -->
+    <header class="bg-dark text-white">
+        <nav class="container mx-auto py-4">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Equipos</a>
+                    <ul class="nav pl-4">
+                        <!-- Teams -->
+                        <li class="nav-item">Equipo 1</li>
+                        <!-- Add other teams as needed -->
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Organización</a>
+                    <ul class="nav pl-4">
+                        <li class="nav-item">Comisión de organización</li>
+                        <li class="nav-item">Retos</li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Torneo</a>
+                    <ul class="nav pl-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Torneo solidario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Torneo deportivo</a>
+                            <ul class="nav pl-4">
+                                <li class="nav-item">Sistema de competición</li>
+                                <li class="nav-item">Clasificación</li>
+                                <li class="nav-item">Resultados</li>
+                                <li class="nav-item">Galería</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Objetivos</a>
+                    <ul class="nav pl-4">
+                        <li class="nav-item">Generales</li>
+                        <li class="nav-item">ODS</li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Colaboraciones</a>
+                    <ul class="nav pl-4">
+                        <li class="nav-item">Apoyos al proyecto</li>
+                        <li class="nav-item">Patrocinadores</li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">F&Q</a>
+                </li>
+            </ul>
+            <div class="mt-4">
+                <div class="d-flex align-items-center">
+                    <div class="w-10 h-10 bg-white rounded-full"></div>
+                    <h1 class="ml-4 text-2xl font-bold">IES Augusto Cup</h1>
+                </div>
+>>>>>>> b7556e3c98df7f035936399c3fc6cdc305a9ef0d
             </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container mt-4">
+        <div>
+            <img src="res/img/imgEquipo1.jpeg" alt="imgEquipo">
+        </div>
+        <div>
+            <h2>Nombre Equipo</h2>
+        </div>
+        <div>
+            <i></i>
+            <h2>Nombre Entrenador</h2>
+        </div>
+        <div>
             <div>
-                <h2>Nombre Equipo</h2>
+                <i></i>
+                <h3>Nombre Jugador 1</h3>
             </div>
             <div>
                 <i></i>
-                <h2>Nombre Entrenador</h2>
+                <h3>Nombre Jugador 2</h3>
             </div>
             <div>
-                <div>
-                    <i></i>
-                    <h3>Nombre Jugador 1</h3>
-                </div>
-                <div>
-                    <i></i>
-                    <h3>Nombre Jugador 2</h3>
-                </div>
-                <div>
-                    <i></i>
-                    <h3>Nombre Jugador 3</h3>
-                </div>
-                <div>
-                    <i></i>
-                    <h3>Nombre Jugador 4</h3>
-                </div>
-                <div>
-                    <i></i>
-                    <h3>Nombre Jugador 5</h3>
-                </div>
-                <div>
-                    <i></i>
-                    <h3>Nombre Jugador 6</h3>
-                </div>
-                <div>
-                    <i></i>
-                    <h3>Nombre Jugador 7</h3>
-                </div>
-                <div>
-                    <i></i>
-                    <h3>Nombre Jugador 8</h3>
-                </div>
+                <i></i>
+                <h3>Nombre Jugador 3</h3>
             </div>
+<<<<<<< HEAD
           </main>
-          <footer>
-            <div>
-                <p>IES AUGUSTO GONZALEZ DE LINARES</p>
-                <img src="" alt="imagenesCantabria">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+          <footer class="container text-center">
+
+            <div class="row">
+              <div class="col">
+                <img src="img/Gobierno de Cantabria.png" alt="Gobierno de Cantabria">
+              </div>
+              <div class="col">
+                <img src="img/Ministerio de Educación y Formación Profesional.png" alt="Ministerio de Educación y Formación Profesional">
+              </div>
+              <div class="col">
+                <img src="img/Fondos Europeos.png" alt="Fondos Europeos">
+              </div>
             </div>
-        </footer>
+        
+            <div class="row">
+              <div class="col"> 
+                <img src="img/Cofinanciado por la Unión Europea.png" alt="Cofinanciado por la Unión Europea">
+        
+              </div>
+              <div class="col">
+                <img src="img/cit.gif" alt="Cit">
+              </div>
+              <div class="col">
+                <img src="img/LOGO_COLOR_Seidor.png" alt="Seidor">
+              </div>
+              <div class="col">
+                <img src="img/Nueva Vida.png" alt="Nueva Vida">
+              </div>
+            </div>
+        
+          </footer>
 </body>
 </html>
+=======
+            <div>
+                <i></i>
+                <h3>Nombre Jugador 4</h3>
+            </div>
+            <div>
+                <i></i>
+                <h3>Nombre Jugador 5</h3>
+            </div>
+            <div>
+                <i></i>
+                <h3>Nombre Jugador 6</h3>
+            </div>
+            <div>
+                <i></i>
+                <h3>Nombre Jugador 7</h3>
+            </div>
+            <div>
+                <i></i>
+                <h3>Nombre Jugador 8</h3>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer de Bootstrap -->
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <p>IES AUGUSTO GONZALEZ DE LINARES</p>
+            <!-- Añade las imágenes con las rutas correspondientes -->
+            <img src="" alt="imagenesCantabria">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </footer>
+
+    <!-- Enlaces a los scripts de Bootstrap al final del cuerpo del HTML -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
+>>>>>>> b7556e3c98df7f035936399c3fc6cdc305a9ef0d
