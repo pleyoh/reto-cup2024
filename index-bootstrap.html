@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pagina prinicpal</title>
   <!-- <link rel="stylesheet" href="./res/css/style.css"> -->
-  <link rel="stylesheet" href="./res/css/style.css">
+  <link rel="stylesheet" href="./src/main.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <style>
@@ -16,8 +16,9 @@
         transform: rotate(-90deg);
       }
 
+
       .contenedor1 {
-        width: 100vw;
+        width: 87vw;
 
       }
 
@@ -29,6 +30,7 @@
       .dropdown-menu {
         --bs-dropdown-border-color: #fff;
       }
+
     }
   </style>
 
@@ -49,12 +51,6 @@
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-
-      <div class="container-fluid">
-        <!-- Enlace de la pagina principal -->
-
-
 
         <!-- Inicio de los elementos del menu -->
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -90,6 +86,7 @@
               </ul>
             </li>
             <!-- Lista de Torneo -->
+            <!--! ########################## -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-auto-close="outside"
                 data-bs-toggle="dropdown" aria-expanded="false">Torneo
@@ -107,43 +104,9 @@
                     <li><a class="dropdown-item" href="#">Galería</a></li>
                   </ul>
                 </li>
-                <!-- Lista de Objetivos-->
+                <!-- Lista de Torneo nosq-->
                 <!-- Elementos del sub menu -->
               </ul>
-            </li>
-
-            <!-- Lista de noseq -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Objetivos
-              </a>
-              <!-- Elementos del sub menu -->
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Generales</a></li>
-                <li><a class="dropdown-item" href="#">ODS</a></li>
-
-                <!-- Agregar equipos a conveniencia -->
-              </ul>
-            </li>
-
-            <!-- Lista de Colaboraciones-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Colaboraciones
-              </a>
-              <!-- Elementos del sub menu -->
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Apoyos al proyecto</a></li>
-                <li><a class="dropdown-item" href="#">Patrocinadores</a></li>
-
-                <!-- Agregar equipos a conveniencia -->
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">F&Q</a>
             </li>
           </ul>
         </div>
@@ -152,6 +115,7 @@
     </nav>
 
   </header>
+  <main>
   <main class="principal">
 
     <div class="container" id="portada">
@@ -160,8 +124,7 @@
     </div>
 
     <!-- Deslizador de imagenes -->
-    <div id="carouselExampleIndicators" class="carousel slide carouselinicio">
-      <h3>Novedades</h3>
+    <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -177,20 +140,20 @@
       <div class="carousel-inner">
         <!-- Imagen inicial -->
         <div class="carousel-item active">
-          <img src="img/_DSF2489.jpg" class="d-block w-100" alt="Imagen1">
+          <img src="_DSF2489.jpg" class="d-block w-100" alt="Imagen1">
         </div>
         <!-- Agregar las imagenes que hagan falta copiando este div y modificando el src del img -->
         <div class="carousel-item">
-          <img src="img/_DSF3080.jpg" class="d-block w-100" alt="Imagen2">
+          <img src="_DSF3080.jpg" class="d-block w-100" alt="Imagen2">
         </div>
         <div class="carousel-item">
-          <img src="img/_DSF2891.jpg" class="d-block w-100" alt="Imagen3">
+          <img src="_DSF2891.jpg" class="d-block w-100" alt="Imagen3">
         </div>
         <div class="carousel-item">
-          <img src="img/_DSF2718.jpg" class="d-block w-100" alt="Imagen4">
+          <img src="_DSF2718.jpg" class="d-block w-100" alt="Imagen4">
         </div>
         <div class="carousel-item">
-          <img src="img/_MG_2911.jpg" class="d-block w-100" alt="Imagen5">
+          <img src="_MG_2911.jpg" class="d-block w-100" alt="Imagen5">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -207,27 +170,32 @@
   </main>
   <footer class="bg-body-tertiary mt-4">
 
-    <div class="row primera mt-4">
-      <div class="col text-center">
-        <img src="./res/img/Gobierno_de_Cantabria.png" alt="Gobierno de Cantabria">
-        <img src="./res/img/Ministerio de Educación y Formación Profesional.png"
-          alt="Ministerio de Educación y Formación Profesional">
-        <img src="./res/img/Fondos Europeos.png" alt="Fondos Europeos">
-        <img src="./res/img/cit.gif" alt="Cit">
-        <img src="./res/img/LOGO_COLOR_Seidor.png" alt="Seidor">
+    <div class="row">
+      <div class="col">
+        <img src="img/Gobierno de Cantabria.png" alt="Gobierno de Cantabria">
       </div>
-    </div>
-
-    <div class="row segunda">
-      <div class="col text-center">
-        <img src="./res/img/Cofinanciado_por_la_Unión_Europea.png" alt="Cofinanciado por la Unión Europea">
-        <img src="./res/img/Nueva Vida.png" alt="Nueva Vida">
+      <div class="col">
+        <img src="img/Ministerio de Educación y Formación Profesional.png"
+          alt="Ministerio de Educación y Formación Profesional">
+      </div>
+      <div class="col">
+        <img src="img/Fondos Europeos.png" alt="Fondos Europeos">
       </div>
     </div>
 
     <div class="row">
-      <div class="col text-center">
-        <p>2023 IES AUG - correomondongo@hotmail.com - <a href="#">Aviso Legal</a></p>
+      <div class="col">
+        <img src="img/Cofinanciado por la Unión Europea.png" alt="Cofinanciado por la Unión Europea">
+
+      </div>
+      <div class="col">
+        <img src="img/cit.gif" alt="Cit">
+      </div>
+      <div class="col">
+        <img src="img/LOGO_COLOR_Seidor.png" alt="Seidor">
+      </div>
+      <div class="col">
+        <img src="img/Nueva Vida.png" alt="Nueva Vida">
       </div>
     </div>
 
