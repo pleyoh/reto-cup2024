@@ -1,3 +1,15 @@
 .minilogo{
   width: 60px;
 }
+
+.carouselinicio{
+  width: 50%;
+}
+
+.legal *{
+  margin: 0;
+}
+
+footer img{
+  width: 100px;
+}
