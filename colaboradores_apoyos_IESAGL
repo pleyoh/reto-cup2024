@@ -8,6 +8,45 @@
 </head>
 
 <body>
+    <header class="bg-gray-800 text-white">
+        <nav class="container mx-auto py-4">
+          <ul class="flex">
+            <li class="mr-6">
+              <div>Inicio</div>
+            </li>
+            <li class="mr-6">
+              <div>Equipos</div>
+              <ul class="pl-4">
+                <!-- Teams -->
+                <li>Equipo 1</li>
+                <!-- Add other teams as needed -->
+              </ul>
+            </li>
+            
+            <li class="mr-6">
+              <div>Organización</div>
+              <ul class="pl-4">
+                <li>Comisión de organización</li>
+                <li>Retos</li>
+              </ul>
+            </li>
+            <li class="mr-6">
+              <div>Torneo</div>
+              <ul class="pl-4">
+                <li>
+                  <div>Torneo solidario</div>
+                </li>
+                <li>
+                  <div>Torneo deportivo</div>
+                  <ul class="pl-4">
+                    <li>Sistema de competición</li>
+                    <li>Clasificación</li>
+                    <li>Resultados</li>
+                    <li>Galería</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
     <main>
         <div>
             <!-- <Imagen del logo de la empresa patrocinadora> -->
