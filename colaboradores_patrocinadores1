@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrocinadores</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <!-- <Son 10 páginas como esta, cada una con un patrocinador diferente> -->
@@ -12,66 +14,117 @@
 
 <body>
 
-    <nav class="container mx-auto py-4">
-        <ul class="flex">
-          <li class="mr-6">
-            <div>Inicio</div>
-          </li>
-          <li class="mr-6">
-            <div>Equipos</div>
-            <ul class="pl-4">
-              <!-- Teams -->
-              <li>Equipo 1</li>
-              <!-- Add other teams as needed -->
-            </ul>
-          </li>
-          <li class="mr-6">
-            <div>Organización</div>
-            <ul class="pl-4">
-              <li>Comisión de organización</li>
-              <li>Retos</li>
-            </ul>
-          </li>
-          <li class="mr-6">
-            <div>Torneo</div>
-            <ul class="pl-4">
-              <li>
-                <div>Torneo solidario</div>
-              </li>
-              <li>
-                <div>Torneo deportivo</div>
-                <ul class="pl-4">
-                  <li>Sistema de competición</li>
-                  <li>Clasificación</li>
-                  <li>Resultados</li>
-                  <li>Galería</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="mr-6">
-            <div>Objetivos</div>
-            <ul class="pl-4">
-              <li>Generales</li>
-              <li>ODS</li>
-            </ul>
-          </li>
-          <li class="mr-6">
-            <div>Colaboraciones</div>
-            <ul class="pl-4">
-              <li>Apoyos al proyecto</li>
-              <li>Patrocinadores</li>
-            </ul>
-          </li>
-          <li class="mr-6">
-            <div>Contacto</div>
-          </li>
-          <li class="mr-6">
-            <div>F&Q</div>
-          </li>
-        </ul>
+  <header class="d-flex justify-content-between bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <!-- Logo de la izquierda -->
+      <img src="./res/img/logoleon.png" alt="Mini Logo" class="logo-nav">
 
-      </nav>
+      <div class="container-fluid">
+        <!-- Enlace de la pagina principal -->
+        <a class="navbar-brand" href="./index-bootstrap.html">IES Augusto Cup</a>
+
+        <!-- Boton del desplegable -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Inicio de los elementos del menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+
+            <!-- Lista de equipos -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Equipos
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Equipo 1</a></li>
+                <li><a class="dropdown-item" href="#">Equipo 2</a></li>
+
+                <!-- Agregar equipos a conveniencia -->
+              </ul>
+            </li>
+
+            <!-- Lista de Organizacion -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Organizacion
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Comisión de organización</a></li>
+                <li><a class="dropdown-item" href="#">Retos</a></li>
+
+              </ul>
+            </li>
+            <!-- Lista de Torneo -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-auto-close="outside"
+                data-bs-toggle="dropdown" aria-expanded="false">Torneo
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Torneo solidario</a></li>
+
+                <li class="dropstart">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Torneo deportivo</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sistema de competición</a></li>
+                    <li><a class="dropdown-item" href="#">Clasificación</a></li>
+                    <li><a class="dropdown-item" href="#">Resultados</a></li>
+                    <li><a class="dropdown-item" href="#">Galería</a></li>
+                  </ul>
+                </li>
+                <!-- Lista de Torneo nosq-->
+                <!-- Elementos del sub menu -->
+              </ul>
+            </li>
+
+            <!-- Lista de noseq -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Objetivos
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Generales</a></li>
+                <li><a class="dropdown-item" href="#">ODS</a></li>
+
+                <!-- Agregar equipos a conveniencia -->
+              </ul>
+            </li>
+
+            <!-- Lista de noseq 2-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Colaboraciones
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Apoyos al proyecto</a></li>
+                <li><a class="dropdown-item" href="#">Patrocinadores</a></li>
+
+                <!-- Agregar equipos a conveniencia -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">F&Q</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
 
 
     <main>
@@ -89,6 +142,13 @@
         </div>
             
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
