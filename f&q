@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F&Q</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h4> PREGUNTA 1 </h4>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quaerat natus, ea, libero architecto, culpa adipisci aut animi qui fugit ipsam vitae cum quas aliquam illo molestias! Illum, eos qui!</p>
+        </div>
+
+        <div>
+            <h4> PREGUNTA 2 </h4>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quaerat natus, ea, libero architecto, culpa adipisci aut animi qui fugit ipsam vitae cum quas aliquam illo molestias! Illum, eos qui!</p>
+        </div>
+
+        <div>
+            <h4> PREGUNTA 3 </h4>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quaerat natus, ea, libero architecto, culpa adipisci aut animi qui fugit ipsam vitae cum quas aliquam illo molestias! Illum, eos qui!</p>
+        </div>
+
+        <div>
+            <h4> PREGUNTA 4 </h4>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quaerat natus, ea, libero architecto, culpa adipisci aut animi qui fugit ipsam vitae cum quas aliquam illo molestias! Illum, eos qui!</p>
+        </div>
+
+        <div>
+            <h4> PREGUNTA 5 </h4>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quaerat natus, ea, libero architecto, culpa adipisci aut animi qui fugit ipsam vitae cum quas aliquam illo molestias! Illum, eos qui!</p>
+        </div>
+
+        <div>
+            <h4> PREGUNTA 6</h4>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quaerat natus, ea, libero architecto, culpa adipisci aut animi qui fugit ipsam vitae cum quas aliquam illo molestias! Illum, eos qui!</p>
+        </div>
+
+        <div>
+            <h4> PREGUNTA 7 </h4>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quaerat natus, ea, libero architecto, culpa adipisci aut animi qui fugit ipsam vitae cum quas aliquam illo molestias! Illum, eos qui!</p>
+        </div>
+
+    </main>
+</body>
+</html>

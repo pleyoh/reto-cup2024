@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IES Peñacastillo</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <!-- <Imagen del logo de la empresa patrocinadora> -->
+        </div>
+
+        <div>
+            <h2> IES Peñacastillo </h2>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum aliquam repudiandae necessitatibus ea quo iste ipsam molestias nam delectus. Praesentium omnis magni veniam. Veritatis ullam suscipit corrupti, laborum expedita sit?</p>
+        </div>
+
+        <div>
+            <!-- <Más información> -->
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non similique earum quas, consequatur illo sequi quisquam ducimus necessitatibus omnis odio soluta voluptatem repellat quae sapiente dolor esse mollitia expedita vel!        
+        </div>
+            
+    </main>
+</body>
+
+</html>
