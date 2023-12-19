@@ -26,6 +26,7 @@
   height: 60px;
   font-size: x-large;
 }
+
 body {
   background-color: #dcdad7 !important;
 }
@@ -56,7 +57,7 @@ header nav p {
   padding: 0px 5%;
 }
 
-.principal > * {
+.principal>* {
   margin: auto;
 }
 
@@ -75,6 +76,7 @@ footer {
   overflow: hidden;
 }
 
+#siali {
 #siali {
   background: #3a3f41;
 }
@@ -126,7 +128,7 @@ nav {
   justify-content: flex-end !important;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   nav .container-fluid {
     background-color: hsl(200, 6%, 20%) !important;
   }
@@ -149,3 +151,21 @@ nav {
   }
 }
 
+/* Para las paginas de colaboradores */
+.card {
+  box-shadow: 1.6px 3.2px 3.2px hsl(0deg 0% 0% / 0.45);
+}
+
+.card strong{
+  color: #3a3f41;
+}
+
+.card img {
+  width: fit-content;
+  margin: 20px auto;
+  box-shadow: #3a3f41 5px 5px 15px;
+}
+
+.card-body{
+  background-color: #f0ece5;
+}
