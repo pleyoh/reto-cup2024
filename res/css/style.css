@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 @font-face {
   font-family: "Nunito";
   src: url("../font/Nunito-VariableFont_wght.ttf") format("truetype");
@@ -11,6 +13,7 @@
 *{
   font-family: "Nunito";
 }
+
 .bg-secondary-new {
   background-color: hsl(200, 6%, 20%) !important;
 }
@@ -22,6 +25,15 @@
 .btn-ong {
   background: #ec1d27;
   color: #ffffff;
+  width: 100px;
+  height: 60px;
+  font-size: x-large;
+  margin-top: 2rem;
+}
+
+.btn-ong:hover {
+  background: #ff1a26 !important;
+  color: #ffffff !important;
   width: 100px;
   height: 60px;
   font-size: x-large;
@@ -57,7 +69,7 @@ header nav p {
   padding: 0px 5%;
 }
 
-.principal>* {
+.principal > * {
   margin: auto;
 }
 
@@ -95,20 +107,45 @@ footer .segunda img {
 
 #portada {
   width: 100%;
-  height: 800px;
+  height: 500px;
   background: url("../img/Portada.jpg") no-repeat;
+
   background-size: cover;
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
+  align-items: end !important;
+  padding: 0;
+}
+
+#portada .negrura {
+  display: block;
+  width: 100%;
+  height: 500px;
+  background: rgba(58, 63, 65, 0.215);
+  background-size: cover;
   align-items: end;
-  padding: 15% 10% 0 0;
+}
+
+#portada:hover .negrura {
+  display: block;
+  width: 100%;
+  height: 500px;
+  background: rgba(58, 63, 65, 0.081);
+  background-size: cover;
 }
 
 #portada h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.5rem;
   text-align: end;
-  width: 37%;
-  font-family: "Nunito";
+  margin: 0 0 0 auto;
+  margin-top: 3rem;
+  padding-right: 25rem;
+  padding-left: 1rem;
+  width: 20%;
+  border-left: black 5px solid;
+  color: black;
 }
 
 #portada a {
@@ -171,9 +208,14 @@ nav {
   background-color: #f0ece5;
 }
 
-.carrusel{
+.carrusel {
   box-shadow: 1.6px 3.2px 3.2px hsl(0deg 0% 0% / 0.45);
   background: white;
   padding: 10px;
 }
 
+.patrocinadores1 {
+  background: #ffffff;
+  width: 100%;
+  height: 200px;
+}
