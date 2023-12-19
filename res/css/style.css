@@ -23,9 +23,8 @@ body {
   background-color: #dcdad7 !important;
 }
 
-header,
-header ul {
-  background-color: rgb(58, 63, 65) !important;
+header, header ul {
+  background-color: #3a3f41 !important;
 }
 
 header .dropdown-item:hover {
@@ -67,6 +66,10 @@ footer {
   margin: 0;
   background-color: white;
   overflow: hidden;
+}
+
+#siali{
+  background: #3a3f41;
 }
 
 footer a {
