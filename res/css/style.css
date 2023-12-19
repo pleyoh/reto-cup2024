@@ -1,14 +1,20 @@
+/* Fuentes del proyecto */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap");
 
-@font-face {
+:root {
+  /* --(nombre generico de la app)-sys-propiedad: red; */
+  --cup-body-bg: #dcdad7;
+}
+
+/*!!!!!! No useis *{} para las fuentes. Se cancela literalmente el resto de las fuentes añadidas. Si lo quieres aplicar a toda la pagina se usa html{} */
+/* 
+*{
   font-family: "Nunito";
-  src: url("../font/Nunito-VariableFont_wght.ttf") format("truetype");
 }
-
-@font-face {
-  font-family: "Nunito Italic";
-  src: url("../font/Nunito-Italic-VariableFont_wght.ttf") format("truetype");
-}
+*/
+/*!!!!!! */
 
 .bg-secondary-new {
   background-color: hsl(200, 6%, 20%) !important;
@@ -25,6 +31,10 @@
   height: 60px;
   font-size: x-large;
   margin-top: 2rem;
+}
+
+.patrocinadores1 a img {
+  height: 10px;
 }
 
 .btn-ong:hover {
