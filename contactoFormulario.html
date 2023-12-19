@@ -7,46 +7,128 @@
   <title>Formulario</title>
   <!-- Añade el enlace al CSS de Bootstrap -->
   <link rel="stylesheet" href="./res/css/style.css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    form,
+    form div {
+      text-align: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 
 <body>
   <!-- Navbar de Bootstrap -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">IES Augusto Cup</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="./reto-cup2024/index-bootstrap.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Equipos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Organización</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Torneo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Objetivos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Colaboraciones</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">F&Q</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <header class="d-flex justify-content-between">
+    <nav class="navbar navbar-expand-lg">
+      <!-- Logo de la izquierda -->
+      <div class="contenedor1 me-5 d-flex align-items-center gap-3 flex-row">
+        <div class="d-flex flex-row flex align-items-center gap-3 ms-4">
+          <img src="./res/img/Logos/logoleon.png" alt="Mini Logo" class="logo-nav">
+          <a class="navbar-brand" href="./index.html">IES Augusto Cup</a>
+        </div>
+
+        <!-- Boton del desplegable -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Inicio de los elementos del menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+
+            <!-- Lista de equipos -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Equipos
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Equipo 1</a></li>
+                <li><a class="dropdown-item" href="#">Equipo 2</a></li>
+
+                <!-- Agregar equipos a conveniencia -->
+              </ul>
+            </li>
+
+            <!-- Lista de Organizacion -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Organización
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Comisión de organización</a></li>
+                <li><a class="dropdown-item" href="#">Retos</a></li>
+
+              </ul>
+            </li>
+            <!-- Lista de Torneo -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-auto-close="outside"
+                data-bs-toggle="dropdown" aria-expanded="false">Torneo
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Torneo solidario</a></li>
+
+                <li class="dropstart">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Torneo deportivo</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sistema de competición</a></li>
+                    <li><a class="dropdown-item" href="#">Clasificación</a></li>
+                    <li><a class="dropdown-item" href="#">Resultados</a></li>
+                    <li><a class="dropdown-item" href="#">Galería</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!--  -->
+            <!-- Lista de Organizacion -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Objetivos
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Generales</a></li>
+                <li><a class="dropdown-item" href="#">ODS</a></li>
+
+              </ul>
+            </li>
+            <!--  -->
+            <!-- Lista de Organizacion -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Organización
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Apoyos al proyecto</a></li>
+                <li><a class="dropdown-item" href="#">Patrocinadores</a></li>
+
+              </ul>
+            </li>
+            <!--  -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">F&Q</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
 
   <!-- Formulario de Bootstrap -->
   <div class="container mt-5">
@@ -64,12 +146,13 @@
           <label for="telefono">Teléfono:</label>
           <input type="tel" class="form-control" id="telefono" name="telefono" required>
         </div>
+        <div class="form-group col-md-4">
+          <label for="mensaje">Mensaje:</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Comentarios aquí"
+            style="resize: none;"></textarea>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="mensaje">Mensaje:</label>
-        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Comentarios aquí"
-          style="resize: none;" ></textarea>
-      </div>
+
       <input type="submit" class="btn btn-primary" value="Enviar" name="enviar">
     </form>
   </div>
@@ -78,23 +161,23 @@
     <div class="row primera text-center mt-4">
       <div class="col">
         <p>Colaboradores </p>
-        <a href="https://www.cantabria.es/"><img src="./res/img/Gobierno_de_Cantabria.png"
+        <a href="https://www.cantabria.es/"><img src="./res/img/Logos/Gobierno_de_Cantabria.png"
             alt="Gobierno de Cantabria"></a>
         <a href="https://www.educacionyfp.gob.es/portada.html"><img
-            src="./res/img/Ministerio de Educación y Formación Profesional.png"
+            src="./res/img/Logos/Ministerio de Educación y Formación Profesional.png"
             alt="Ministerio de Educación y Formación Profesional"></a>
 
-        <img src="./res/img/Fondos Europeos.png" alt="Fondos Europeos">
-        <img src="./res/img/cit.png" alt="Cit">
-        <img src="./res/img/LOGO_COLOR_Seidor.png" alt="Seidor">
+        <img src="./res/img/Logos/Fondos Europeos.png" alt="Fondos Europeos">
+        <img src="./res/img/Logos/cit.png" alt="Cit">
+        <img src="./res/img/Logos/LOGO_COLOR_Seidor.png" alt="Seidor">
       </div>
     </div>
 
     <div class="row segunda text-center">
       <div class="col">
         <p>Apoyos al Proyecto </p>
-        <img src="./res/img/Cofinanciado_por_la_Unión_Europea.png" alt="Cofinanciado por la Unión Europea">
-        <img src="./res/img/Nueva Vida.png" alt="Nueva Vida">
+        <img src="./res/img/Logos/Cofinanciado_por_la_Unión_Europea.png" alt="Cofinanciado por la Unión Europea">
+        <img src="./res/img/Logos/Nueva Vida.png" alt="Nueva Vida">
       </div>
     </div>
 
@@ -104,9 +187,12 @@
 
   </footer>
   <!-- Añade los enlaces a los scripts de Bootstrap al final del cuerpo del HTML -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
