@@ -10,9 +10,6 @@
   src: url("../font/Nunito-Italic-VariableFont_wght.ttf") format("truetype");
 }
 
-*{
-  font-family: "Nunito";
-}
 .bg-secondary-new {
   background-color: hsl(200, 6%, 20%) !important;
 }
@@ -24,6 +21,15 @@
 .btn-ong {
   background: #ec1d27;
   color: #ffffff;
+  width: 100px;
+  height: 60px;
+  font-size: x-large;
+  margin-top: 2rem;
+}
+
+.btn-ong:hover {
+  background: #ff1a26 !important;
+  color: #ffffff !important;
   width: 100px;
   height: 60px;
   font-size: x-large;
@@ -59,7 +65,7 @@ header nav p {
   padding: 0px 5%;
 }
 
-.principal>* {
+.principal > * {
   margin: auto;
 }
 
@@ -104,7 +110,7 @@ footer .segunda img {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: end !important;
   padding: 0;
 }
 
@@ -114,6 +120,7 @@ footer .segunda img {
   height: 500px;
   background: rgba(58, 63, 65, 0.215);
   background-size: cover;
+  align-items: end;
 }
 
 #portada:hover .negrura {
@@ -125,13 +132,13 @@ footer .segunda img {
 }
 
 #portada h1 {
-  margin: 0 0 0 auto;
   font-family: "Bebas Neue", sans-serif;
+  font-size: 3.5rem;
   text-align: end;
-  margin-top: 1rem;
+  margin: 0 0 0 auto;
+  margin-top: 3rem;
   padding-right: 25rem;
   padding-left: 1rem;
-  font-size: 3rem;
   width: 20%;
   border-left: black 5px solid;
   color: black;
@@ -196,8 +203,14 @@ nav {
   background-color: #f0ece5;
 }
 
-.carrusel{
+.carrusel {
   box-shadow: 1.6px 3.2px 3.2px hsl(0deg 0% 0% / 0.45);
   background: white;
   padding: 10px;
+}
+
+.patrocinadores1 {
+  background: #ffffff;
+  width: 100%;
+  height: 200px;
 }
