@@ -8,6 +8,10 @@
   --cup-body-bg: #dcdad7;
 }
 
+.activo {
+  color: #ec461d !important;
+}
+
 /*!!!!!! No useis *{} para las fuentes. Se cancela literalmente el resto de las fuentes añadidas. Si lo quieres aplicar a toda la pagina se usa html{} */
 /* 
 *{
@@ -25,7 +29,7 @@
 }
 
 .btn-ong {
-  background: #ec1d27;
+  background: #ec461d;
   color: #ffffff;
   width: 100px;
   height: 60px;
@@ -38,7 +42,7 @@
 }
 
 .btn-ong:hover {
-  background: #ff1a26 !important;
+  background: #ec461d !important;
   color: #ffffff !important;
   width: 100px;
   height: 60px;
