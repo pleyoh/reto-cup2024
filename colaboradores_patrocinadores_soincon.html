@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patrocinadores</title>
-  <link rel="stylesheet" href="./src/main.css">
+  <link rel="stylesheet" href="./res/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -15,12 +15,12 @@
 
 
 <body>
-  <header class="d-flex justify-content-between">
-    <nav class="navbar navbar-expand-lg">
+  <header class="d-flex justify-content-between ">
+    <nav class="navbar navbar-expand-lg d-flex flex-row">
       <!-- Logo de la izquierda -->
       <div class="contenedor1 me-5 d-flex align-items-center gap-3 flex-row">
         <div class="d-flex flex-row flex align-items-center gap-3 ms-4">
-          <img src="./res/img/logoleon.png" alt="Mini Logo" class="logo-nav">
+          <img src="./res/img/logotipos/logoleon.png" alt="Mini Logo" class="logo-nav">
           <a class="navbar-brand" href="./index-bootstrap.html">IES Augusto Cup</a>
         </div>
 
@@ -29,9 +29,15 @@
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+      </div>
+
+      <div class="container-fluid">
+        <!-- Enlace de la pagina principal -->
+
+
 
         <!-- Inicio de los elementos del menu -->
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse " id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -43,7 +49,7 @@
                 aria-expanded="false">Equipos
               </a>
               <!-- Elementos del sub menu -->
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu bg-body-tertiary">
                 <li><a class="dropdown-item" href="#">Equipo 1</a></li>
                 <li><a class="dropdown-item" href="#">Equipo 2</a></li>
 
@@ -54,17 +60,16 @@
             <!-- Lista de Organizacion -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Organización
+                aria-expanded="false">Organizacion
               </a>
               <!-- Elementos del sub menu -->
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu bg-secondary-new">
                 <li><a class="dropdown-item" href="#">Comisión de organización</a></li>
                 <li><a class="dropdown-item" href="#">Retos</a></li>
 
               </ul>
             </li>
             <!-- Lista de Torneo -->
-            <!--! ########################## -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-auto-close="outside"
                 data-bs-toggle="dropdown" aria-expanded="false">Torneo
@@ -82,9 +87,41 @@
                     <li><a class="dropdown-item" href="#">Galería</a></li>
                   </ul>
                 </li>
-                <!-- Lista de Torneo nosq-->
+                <!-- Lista de Objetivos-->
                 <!-- Elementos del sub menu -->
               </ul>
+            </li>
+            <!-- Lista de Organizacion -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Objetivos
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Generales</a></li>
+                <li><a class="dropdown-item" href="#">ODS</a></li>
+
+                <!-- Agregar equipos a conveniencia -->
+              </ul>
+            </li>
+            <!-- Lista de Organizacion -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Colaboraciones
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Apoyos al proyecto</a></li>
+                <li><a class="dropdown-item" href="#">Patrocinadores</a></li>
+
+                <!-- Agregar equipos a conveniencia -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">F&Q</a>
             </li>
           </ul>
         </div>
@@ -94,28 +131,109 @@
 
   </header>
 
-  </header>
+  <main class="principal">
+    <div class="row mt-4">
+      <div class="col">
+        <div class="card">
+          <!-- imagen -->
+          <img src="./res/img/logotipos/Soincon.png" alt="Soincon">
+          <div class="card-body">
+            <!-- titulo -->
+            <h5 class="card-title"><strong>Soincon</strong></h5>
+            <!-- descripcion -->
+            <p class="card-text">
+              <strong>Tu socio de confianza en la industria 4.0</strong><br>
+              Somos expertos en desarrollo de soluciones software, integración de sistemas industriales y LEAN
+              Manufacturing. Acompañamos a nuestros clientes definiendo un nuevo futuro para la fabricación obteniendo
+              más eficiencia en los procesos industriales con el uso de nuevas tecnologías<br>
+
+              <strong>Nuestros Servicios</strong><br>
+              Ofrecemos soluciones de software que mejoran los procesos asociados con la calidad, el mantenimiento y la
+              producción con el objetivo de ayudarte en esa transición digital hacia la industria 4.0.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 carrusel align-self-center">
+        <!-- Deslizador de imagenes -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <!-- Agregar un boton nuevo por cada imagen nueva, aumentar los contadores de 'data-bs-slide-to' y 'aria-label' -->
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- Imagen inicial -->
+            <div class="carousel-item active">
+              <img src="./res/img/Soincon1.jpg" class="d-block w-100" alt="Soincon">
+            </div>
+            <!-- Agregar las imagenes que hagan falta copiando este div y modificando el src del img -->
+            <div class="carousel-item">
+              <img src="./res/img/Soincon2.jpg" class="d-block w-100" alt="Soincon">
+            </div>
+            <div class="carousel-item">
+              <img src="./res/img/Soincon3.jpg" class="d-block w-100" alt="Soincon">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
 
 
-  <main>
-    <div>
-      <img src="img/Soincon.png"
-      alt="Soincon">   
+
     </div>
 
-    <div>
-      <h2> Soincon </h2>
-      <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum aliquam repudiandae necessitatibus ea quo iste
-        ipsam molestias nam delectus. Praesentium omnis magni veniam. Veritatis ullam suscipit corrupti, laborum
-        expedita sit?</p>
-    </div>
-
-    <div>
-      <!-- <slider con imágenes relacionadas con la colaboración de la empresa> -->
-    </div>
 
   </main>
 
+  <footer class="bg-body-tertiary mt-4">
+    <div class="row primera text-center mt-4 mb-4">
+      <div class="col">
+        <p>Patrocinadores</p>
+        <!-- Agregar colaboradores a conveniencia -->
+        <a href="#"><img src="./res/img/logotipos/Logo_Deode.png" alt="Fondos Europeos"></a>
+        <a href="#"><img src="./res/img/logotipos/LOGO_COLOR_Seidor.png" alt="Seidor"></a>
+        <a href="#"><img src="./res/img/logotipos/cit.png" alt="Seidor"></a>
+        <a href="#"><img src="./res/img/logotipos/Infortec.png" alt="Infortec"></a>
+        <a href="#"><img id="siali" src="./res/img/logotipos/Siali_tech.png" alt="Siali"></a>
+        <a href="#"><img src="./res/img/logotipos/Soincon.png" alt="Soincon"></a>
+      </div>
+    </div>
+
+    <div class="row segunda text-center">
+      <div class="col">
+        <p>Apoyos al Proyecto </p>
+        <a href="https://www.cantabria.es/"><img src="./res/img/logotipos/Gobierno_de_Cantabria.png"
+            alt="Gobierno de Cantabria"></a>
+        <a href="https://www.educacionyfp.gob.es/portada.html"><img
+            src="./res/img/logotipos/Ministerio de Educación y Formación Profesional.png"
+            alt="Ministerio de Educación y Formación Profesional"></a>
+
+        <a href="#"><img src="./res/img/logotipos/Nueva Vida.png" alt="Nueva Vida"></a>
+        <a href="#"><img src="./res/img/logotipos/IES_AUG.png" alt="IES AUG"></a>
+
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <p>2023 IES AUG - retoaglcup@gmail.com - <a href="#">Aviso Legal</a></p>
+    </div>
+
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
