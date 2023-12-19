@@ -12,6 +12,10 @@
   background-color: hsl(200, 6%, 20%) !important;
 }
 
+.bg-dark {
+  background-color: #dcdad7 !important;
+}
+
 .btn-ong {
   background: #ec1d27;
   color: #ffffff;
@@ -23,7 +27,7 @@ body {
   background-color: #dcdad7 !important;
 }
 
-header, header ul {
+header {
   background-color: #3a3f41 !important;
 }
 
@@ -68,7 +72,7 @@ footer {
   overflow: hidden;
 }
 
-#siali{
+#siali {
   background: #3a3f41;
 }
 
@@ -120,6 +124,10 @@ nav {
 }
 
 @media (max-width: 991px) {
+  nav .container-fluid {
+    background-color: hsl(200, 6%, 20%) !important;
+  }
+
   .dropdown-item::before {
     transform: rotate(-90deg);
   }
@@ -134,7 +142,7 @@ nav {
   }
 
   .dropdown-menu {
-    --bs-dropdown-border-color: #fff;
+    border: none !important;
   }
 }
 
