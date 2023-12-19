@@ -2,78 +2,84 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <!-- Añade el enlace al CSS de Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navbar de Bootstrap -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">IES Augusto Cup</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./reto-cup2024/index-bootstrap.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Equipos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Organización</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Torneo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Objetivos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Colaboraciones</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">F&Q</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Formulario de Bootstrap -->
-    <div class="container mt-5">
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="nombre">Nombre y apellidos:</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="correo">Correo Electrónico:</label>
-                    <input type="email" class="form-control" id="correo" name="correo">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" class="form-control" id="telefono" name="telefono">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Comentarios aquí"></textarea>
-            </div>
-            <button type="reset" class="btn btn-primary">Enviar formulario</button>
-        </form>
+  <!-- Navbar de Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">IES Augusto Cup</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="./reto-cup2024/index-bootstrap.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Equipos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Organización</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Torneo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Objetivos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Colaboraciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">F&Q</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- Formulario de Bootstrap -->
+  <div class="container mt-5">
+    <form action="./recibirFormulario.php" method="post">
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" name="nombre">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" class="form-control" id="apellidos" name="apellidos">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="correo">Correo Electrónico:</label>
+          <input type="email" class="form-control" id="correo" name="correo">
+        </div>
+        <div class="form-group col-md-12">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" class="form-control" id="telefono" name="telefono">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Comentarios aquí" style="resize: none;"></textarea>
+      </div>
+      <input type="submit" class="btn btn-primary" value="Enviar" name="enviar">
+    </form>
+  </div>
+
+  <!-- Añade los enlaces a los scripts de Bootstrap al final del cuerpo del HTML -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
