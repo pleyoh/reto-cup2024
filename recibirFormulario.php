@@ -35,7 +35,7 @@ try {
 
     // Configura el asunto y el cuerpo del mensaje
     $mail->Subject = 'Nuevo mensaje de contacto';
-    $mail->Body = "Nombre: $nombre\nCorreo Electrónico: $email\nMensaje: $mensaje";
+    $mail->Body = "$mensaje";
 
     // Envía el correo
     $mail->send();

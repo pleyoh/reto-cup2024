@@ -10,6 +10,10 @@
   src: url("../font/Nunito-Italic-VariableFont_wght.ttf") format("truetype");
 }
 
+*{
+  font-family: "Nunito";
+}
+
 .bg-secondary-new {
   background-color: hsl(200, 6%, 20%) !important;
 }
