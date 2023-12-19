@@ -10,71 +10,85 @@
 
 
 <body>
-    <nav class="container mx-auto py-4">
-        <ul class="flex">
-          <li class="mr-6">
-            <div>Inicio</div>
-          </li>
-          <li class="mr-6">
-            <div>Equipos</div>
-            <ul class="pl-4">
-              <!-- Teams -->
-              <li>Equipo 1</li>
-              <!-- Add other teams as needed -->
-            </ul>
-          </li>
-          <li class="mr-6">
-            <div>Organización</div>
-            <ul class="pl-4">
-              <li>Comisión de organización</li>
-              <li>Retos</li>
-            </ul>
-          </li>
-          <li class="mr-6">
-            <div>Torneo</div>
-            <ul class="pl-4">
-              <li>
-                <div>Torneo solidario</div>
-              </li>
-              <li>
-                <div>Torneo deportivo</div>
-                <ul class="pl-4">
-                  <li>Sistema de competición</li>
-                  <li>Clasificación</li>
-                  <li>Resultados</li>
-                  <li>Galería</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="mr-6">
-            <div>Objetivos</div>
-            <ul class="pl-4">
-              <li>Generales</li>
-              <li>ODS</li>
-            </ul>
-          </li>
-          <li class="mr-6">
-            <div>Colaboraciones</div>
-            <ul class="pl-4">
-              <li>Apoyos al proyecto</li>
-              <li>Patrocinadores</li>
-            </ul>
-          </li>
-          <li class="mr-6">
-            <div>Contacto</div>
-          </li>
-          <li class="mr-6">
-            <div>F&Q</div>
-          </li>
-        </ul>
-        <div class="mt-4">
-          <div class="flex items-center">
-            <div class="w-10 h-10 bg-white rounded-full"></div>
-            <h1 class="ml-4 text-2xl font-bold">IES Augusto Cup</h1>
-          </div>
+  <header class="d-flex justify-content-between">
+    <nav class="navbar navbar-expand-lg">
+      <!-- Logo de la izquierda -->
+      <div class="contenedor1 me-5 d-flex align-items-center gap-3 flex-row">
+        <div class="d-flex flex-row flex align-items-center gap-3 ms-4">
+          <img src="./res/img/logoleon.png" alt="Mini Logo" class="logo-nav">
+          <a class="navbar-brand" href="./index-bootstrap.html">IES Augusto Cup</a>
         </div>
-      </nav>
+
+        <!-- Boton del desplegable -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Inicio de los elementos del menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+
+            <!-- Lista de equipos -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Equipos
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Equipo 1</a></li>
+                <li><a class="dropdown-item" href="#">Equipo 2</a></li>
+
+                <!-- Agregar equipos a conveniencia -->
+              </ul>
+            </li>
+
+            <!-- Lista de Organizacion -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Organización
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Comisión de organización</a></li>
+                <li><a class="dropdown-item" href="#">Retos</a></li>
+
+              </ul>
+            </li>
+            <!-- Lista de Torneo -->
+            <!--! ########################## -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-auto-close="outside"
+                data-bs-toggle="dropdown" aria-expanded="false">Torneo
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Torneo solidario</a></li>
+
+                <li class="dropstart">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Torneo deportivo</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sistema de competición</a></li>
+                    <li><a class="dropdown-item" href="#">Clasificación</a></li>
+                    <li><a class="dropdown-item" href="#">Resultados</a></li>
+                    <li><a class="dropdown-item" href="#">Galería</a></li>
+                  </ul>
+                </li>
+                <!-- Lista de Torneo nosq-->
+                <!-- Elementos del sub menu -->
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+  
     <form>
         <fieldset>
             <tr>
