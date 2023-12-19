@@ -1,27 +1,35 @@
 @font-face {
-  font-family: 'Nunito';
-  src: url('../font/Nunito-VariableFont_wght.ttf') format('truetype');
+  font-family: "Nunito";
+  src: url("../font/Nunito-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Nunito Italic';
-  src: url('../font/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+  font-family: "Nunito Italic";
+  src: url("../font/Nunito-Italic-VariableFont_wght.ttf") format("truetype");
 }
 
-
+.btn-ong {
+  background: #ec1d27;
+  color: #ffffff;
+  width: 100px;
+  height: 60px;
+  font-size: x-large;
+}
 body {
   background-color: #dcdad7 !important;
 }
 
-header, header ul {
+header,
+header ul {
   background-color: rgb(58, 63, 65) !important;
 }
 
-header .dropdown-item:hover{
+header .dropdown-item:hover {
   background-color: rgb(121, 125, 126);
 }
 
-header nav a, header nav p{
+header nav a,
+header nav p {
   color: #dcdad7 !important;
 }
 
@@ -38,7 +46,7 @@ header nav a, header nav p{
   padding: 0px 5%;
 }
 
-.principal>* {
+.principal > * {
   margin: auto;
 }
 
@@ -80,7 +88,6 @@ footer .segunda img {
   flex-direction: column;
   align-items: end;
   padding: 15% 10% 0 0;
-
 }
 
 #portada h1 {
