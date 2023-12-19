@@ -7,10 +7,10 @@ require './Server/PHPMailer/PHPMailer-master/src/PHPMailer.php';
 require './Server/PHPMailer/PHPMailer-master/src/SMTP.php';
 
 // Recoge los datos del formulario
-$nombre = "nombre";
+$nombre = $_POST["nombre"];
 $email = "retoaglcup@gmail.com";
 $mensaje = "Esto en un mensaje de prueba";
-
+$destinatario= $_POST["correo"];
 // Crea una instancia de PHPMailer
 $mail = new PHPMailer(true);
 
@@ -30,8 +30,8 @@ try {
     $mail->set('oauth2_token', 'tu_token');
 
     // Configura el remitente y el destinatario
-    $mail->setFrom('retoaglcup@gmail.com', 'Tu Nombre');
-    $mail->addAddress('jestebaneza05@educantabria.es', 'Destinatario');
+    $mail->setFrom('retoaglcup@gmail.com', $nombre);
+    $mail->addAddress($destinatario, 'Destinatario');
 
     // Configura el asunto y el cuerpo del mensaje
     $mail->Subject = 'Nuevo mensaje de contacto';
