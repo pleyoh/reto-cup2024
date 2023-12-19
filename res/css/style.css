@@ -1,27 +1,39 @@
+/*! EL "!important;" se usa para sobreescribir el estilo de Boostrap */
+
 /* Fuentes del proyecto */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap");
 
+/* variables */
 :root {
   /* --(nombre generico de la app)-sys-propiedad: red; */
+
+  /* colores */
+  --cup-primary: #ec461d;
+  --cup-secondary: #303436;
   --cup-body-bg: #dcdad7;
+  --cup-black: #000;
+  --cup-white: #fff;
+  --cup-light: #f8f9fa;
+  --cup-dark: #212529;
+
+  /* fuentes */
+  --cup-font-family: "Nunito";
+  --cup-font-family-title: "Bebas Neue", sans-serif;
+}
+
+/* cosas de CSS y tal */
+body {
+  background-color: #dcdad7 !important;
 }
 
 .activo {
-  color: #ec461d !important;
+  color: var(--cup-primary) !important;
 }
-
-/*!!!!!! No useis *{} para las fuentes. Se cancela literalmente el resto de las fuentes añadidas. Si lo quieres aplicar a toda la pagina se usa html{} */
-/* 
-*{
-  font-family: "Nunito";
-}
-*/
-/*!!!!!! */
 
 .bg-secondary-new {
-  background-color: hsl(200, 6%, 20%) !important;
+  background-color: #303436 !important;
 }
 
 .bg-dark {
@@ -37,10 +49,6 @@
   margin-top: 2rem;
 }
 
-.patrocinadores1 a img {
-  height: 10px;
-}
-
 .btn-ong:hover {
   background: #ec461d !important;
   color: #ffffff !important;
@@ -49,25 +57,8 @@
   font-size: x-large;
 }
 
-body {
-  background-color: #dcdad7 !important;
-}
-
-header {
-  background-color: #3a3f41 !important;
-}
-
-header .dropdown-item:hover {
-  background-color: rgb(121, 125, 126);
-}
-
-header nav a,
-header nav p {
-  color: #dcdad7 !important;
-}
-
-.minilogo {
-  width: 60px;
+.patrocinadores1 a img {
+  height: 10px;
 }
 
 .principal {
@@ -83,96 +74,15 @@ header nav p {
   margin: auto;
 }
 
-.logo-nav {
-  width: 50px;
-}
-
 .legal * {
   margin: 0;
-}
-
-footer {
-  padding: 0;
-  margin: 0;
-  background-color: white;
-  overflow: hidden;
-}
-
-#siali {
-  background: #3a3f41;
-}
-
-footer a {
-  text-decoration: none;
-  color: black;
-}
-
-footer .primera img {
-  height: 30px;
-}
-
-footer .segunda img {
-  height: 75px;
-}
-
-#portada {
-  width: 100%;
-  height: 500px;
-  background: url("../img/Portada.jpg") no-repeat;
-
-  background-size: cover;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: end !important;
-  padding: 0;
-}
-
-#portada .negrura {
-  display: block;
-  width: 100%;
-  height: 500px;
-  background: rgba(58, 63, 65, 0.215);
-  background-size: cover;
-  align-items: end;
-}
-
-#portada:hover .negrura {
-  display: block;
-  width: 100%;
-  height: 500px;
-  background: rgba(58, 63, 65, 0.081);
-  background-size: cover;
-}
-
-#portada h1 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 3.5rem;
-  text-align: end;
-  margin: 0 0 0 auto;
-  margin-top: 3rem;
-  padding-right: 25rem;
-  padding-left: 1rem;
-  width: 20%;
-  border-left: black 5px solid;
-  color: black;
-}
-
-#portada a {
-  font-family: "Nunito";
-}
-
-.logo-nav {
-  width: 50px;
-}
-
-nav {
-  width: 100vw;
 }
 
 .container-fluid {
   justify-content: flex-end !important;
 }
+
+/** media-queries */
 
 @media (max-width: 1200px) {
   nav .container-fluid {
@@ -197,7 +107,101 @@ nav {
   }
 }
 
-/* Para las paginas de colaboradores */
+/** nav-bar */
+.navbar-toggler-icon {
+  background-image: url("../img/align-left-regular-24.png") !important;
+}
+
+header {
+  background-color: #3a3f41 !important;
+}
+
+header .dropdown-item:hover {
+  background-color: rgb(121, 125, 126);
+}
+
+header nav a,
+header nav p {
+  color: #dcdad7 !important;
+}
+
+.logo-nav {
+  width: 50px;
+}
+
+/** footer */
+footer {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  overflow: hidden;
+}
+
+.siali {
+  background: #3a3f41;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer .primera img {
+  height: 30px;
+}
+
+footer .segunda img {
+  height: 75px;
+}
+
+/** index.hrml > portada */
+.portada {
+  width: 100%;
+  height: 500px;
+  background: url("../img/Portada.jpg") no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: end !important;
+  padding: 0;
+}
+
+.portada .negrura {
+  display: block;
+  width: 100%;
+  height: 500px;
+  background: rgba(58, 63, 65, 0.215);
+  background-size: cover;
+  align-items: end;
+}
+
+.portada:hover .negrura {
+  display: block;
+  width: 100%;
+  height: 500px;
+  background: rgba(58, 63, 65, 0.24);
+  background-size: cover;
+}
+
+.portada h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.5rem;
+  text-align: end;
+  margin: 0 0 0 auto;
+  margin-top: 3rem;
+  padding-right: 25rem;
+  padding-left: 1rem;
+  width: 20%;
+  border-left: black 5px solid;
+  color: black;
+}
+
+.portada a {
+  font-family: "Nunito";
+}
+
+/** Para las paginas de colaboradores */
 .card {
   box-shadow: 1.6px 3.2px 3.2px hsl(0deg 0% 0% / 0.45);
   border: 10px white solid !important;
@@ -228,8 +232,4 @@ nav {
   background: #ffffff;
   width: 100%;
   height: 200px;
-}
-
-.navbar-toggler-icon {
-  background-image: url("../img/align-left-regular-24.png") !important;
 }
