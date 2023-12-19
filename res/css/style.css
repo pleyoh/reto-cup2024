@@ -136,4 +136,5 @@ nav {
 }
 
 .navbar-toggler-icon {
+  background-image: url("../img/align-left-regular-24.png") !important;
 }
