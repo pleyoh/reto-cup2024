@@ -28,6 +28,18 @@ body {
   background-color: #dcdad7 !important;
 }
 
+body h1 {
+  font-family: "Bebas Neue";
+}
+
+body p {
+  font-family: "Nunito";
+}
+
+body a {
+  font-family: "Nunito";
+} 
+
 .activo {
   color: var(--cup-primary) !important;
 }
@@ -73,7 +85,7 @@ main {
   padding: 0px 5%;
 }
 
-main > * {
+main>* {
   margin: auto;
 }
 
@@ -265,4 +277,15 @@ footer .segunda img {
   gap: 3rem;
 }
 
-/* logotipos */
+/* Pagina de Aviso Legal */
+.avisolegal:nth-child(odd) {
+  background-color: white;
+}
+
+.avisolegal:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.avisolegal p {
+  border-left: 2px black solid;
+}
