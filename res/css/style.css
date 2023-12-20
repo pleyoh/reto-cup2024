@@ -53,24 +53,27 @@ body a {
 }
 
 .btn-ong {
-  background: #ec461d;
-  color: #ffffff;
+  background: #ec461d !important;
+  color: #ffffff !important;
   width: 100px;
   height: 60px;
-  font-size: x-large;
+  font-size: x-large !important;
   margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 60%;
 }
 
 .btn-ong:hover {
-  background: #ec461d !important;
+  background: #ff3300 !important;
   color: #ffffff !important;
   width: 100px;
   height: 60px;
   font-size: x-large;
 }
 
-.patrocinadores1 a img {
-  height: 10px;
+.patrocinadores1 div a img {
+  height: auto;
+  max-height: 50px;
 }
 
 main {
@@ -96,7 +99,12 @@ main>* {
 
 /** media-queries */
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
+  .patrocinadores1 div a img {
+    height: auto;
+    max-height: 30px;
+  }
+
   nav .container-fluid {
     background-color: hsl(200, 6%, 20%) !important;
   }
@@ -168,21 +176,22 @@ footer .segunda img {
 /** index.hrml > portada */
 .portada {
   width: 100%;
-  height: 500px;
+  height: 400px;
   background: url("../img/fotografias/copa/Portada.jpg") no-repeat;
   background-size: cover;
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: end !important;
-  padding: 0;
+  padding: 0 !important;
+  cursor: pointer;
 }
 
 .portada .negrura {
   display: block;
   width: 100%;
   height: 500px;
-  background: rgba(58, 63, 65, 0.215);
+  background: rgba(30, 10, 0, 0.281);
   background-size: cover;
   align-items: end;
 }
@@ -191,13 +200,13 @@ footer .segunda img {
   display: block;
   width: 100%;
   height: 500px;
-  background: rgba(58, 63, 65, 0.24);
+  background: rgba(30, 10, 0, 0.25);
   background-size: cover;
 }
 
 .portada h1 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   text-align: end;
   margin: 0 0 0 auto;
   margin-top: 3rem;
@@ -206,6 +215,11 @@ footer .segunda img {
   width: 20%;
   border-left: black 5px solid;
   color: black;
+}
+
+.portada:hover h1 {
+  transform: translateX(10px);
+  transition: transform 0.3s ease-in-out;
 }
 
 .portada a {
@@ -242,7 +256,25 @@ footer .segunda img {
 .patrocinadores1 {
   background: #ffffff;
   width: 100%;
-  height: 200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.patrocinadores1 div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3rem;
+}
+
+.patrocinadores1 div span {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 3rem;
 }
 
 /* Pagina de Aviso Legal */
