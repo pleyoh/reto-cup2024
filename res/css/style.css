@@ -302,12 +302,12 @@ footer .segunda img {
   height: 50px;
 }
 
-.carousel-item {
-  height: 300px !important;
-  max-width: 800px !important;
-  object-fit: cover !important;
-}
-
 .cosas img {
   height: 15px;
+}
+
+.carousel-inner {
+  max-width: 800px !important;
+
+  max-height: 500px !important;
 }
