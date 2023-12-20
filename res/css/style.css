@@ -61,7 +61,7 @@ body {
   height: 10px;
 }
 
-.principal {
+main {
   margin: 0 auto;
   width: 80%;
   display: flex;
@@ -70,7 +70,7 @@ body {
   padding: 0px 5%;
 }
 
-.principal > * {
+main > * {
   margin: auto;
 }
 
