@@ -1,153 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de Imágenes</title>
-    <!-- <link rel="stylesheet" href="./res/css/style.css"> -->
-  <link rel="stylesheet" href="./src/main.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Imágenes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+  .carousel-control-next{
+    height: 440px;
+    width: 800px;
+  }
+  .carousel-control-prev{
+    height: 440px;
+    width: 800px;
+  }
+  </style>
 </head>
+
 <body>
   <header class="d-flex justify-content-between">
-    <nav class="navbar navbar-expand-lg">
-      <!-- Logo de la izquierda -->
-      <div class="contenedor1 me-5 d-flex align-items-center gap-3 flex-row">
-        <div class="d-flex flex-row flex align-items-center gap-3 ms-4">
-          <img src="./res/img/logoleon.png" alt="Mini Logo" class="logo-nav">
-          <a class="navbar-brand" href="./index-bootstrap.html">IES Augusto Cup</a>
-        </div>
-
-        <!-- Boton del desplegable -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Inicio de los elementos del menu -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-
-            <!-- Lista de equipos -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Equipos
-              </a>
-              <!-- Elementos del sub menu -->
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Equipo 1</a></li>
-                <li><a class="dropdown-item" href="#">Equipo 2</a></li>
-
-                <!-- Agregar equipos a conveniencia -->
-              </ul>
-            </li>
-
-            <!-- Lista de Organizacion -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Organización
-              </a>
-              <!-- Elementos del sub menu -->
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Comisión de organización</a></li>
-                <li><a class="dropdown-item" href="#">Retos</a></li>
-
-              </ul>
-            </li>
-            <!-- Lista de Torneo -->
-            <!--! ########################## -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-auto-close="outside"
-                data-bs-toggle="dropdown" aria-expanded="false">Torneo
-              </a>
-              <!-- Elementos del sub menu -->
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Torneo solidario</a></li>
-
-                <li class="dropstart">
-                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Torneo deportivo</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Sistema de competición</a></li>
-                    <li><a class="dropdown-item" href="#">Clasificación</a></li>
-                    <li><a class="dropdown-item" href="#">Resultados</a></li>
-                    <li><a class="dropdown-item" href="#">Galería</a></li>
-                  </ul>
-                </li>
-                <!-- Lista de Torneo nosq-->
-                <!-- Elementos del sub menu -->
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </nav>
-
+    <!-- ... Tu código de encabezado ... -->
   </header>
 
+  <main>
+    <div class="container text-center my-3">
+      <h2 class="font-weight-light">Galería de imágenes</h2>
+      <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="//via.placeholder.com/800x600/31f?text=1" class="d-block w-100" alt="Slide 1">
+              </div>
+              <div class="col-md-4">
+                <img src="//via.placeholder.com/800x600/e66?text=2" class="d-block w-100" alt="Slide 2">
+              </div>
+              <div class="col-md-4">
+                <img src="//via.placeholder.com/800x600/7d2?text=3" class="d-block w-100" alt="Slide 3">
+              </div>
+            </div>
+          </div>
+          <!-- Segundo slide con tres elementos en una fila -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="//via.placeholder.com/800x600/fc0?text=4" class="d-block w-100" alt="Slide 4">
+              </div>
+              <div class="col-md-4">
+                <img src="//via.placeholder.com/800x600/aba?text=5" class="d-block w-100" alt="Slide 5">
+              </div>
+              <div class="col-md-4">
+                <img src="//via.placeholder.com/800x600/31f?text=6" class="d-block w-100" alt="Slide 6">
+              </div>
+            </div>
+          </div>
+          <!-- Tercer slide con tres elementos en una fila -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="//via.placeholder.com/800x600/fc0?text=7" class="d-block w-100" alt="Slide 7">
+              </div>
+              <div class="col-md-4">
+                <img src="//via.placeholder.com/800x600/aba?text=8" class="d-block w-100" alt="Slide 8">
+              </div>
+              <div class="col-md-4">
+                <img src="//via.placeholder.com/800x600/31f?text=9" class="d-block w-100" alt="Slide 9">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Puedes agregar más slides según sea necesario -->
+      </div>
+      <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#recipeCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+      <h5 class="mt-2 fw-light">Puedes navegar utilizando las flechas</h5>
+    </div>
+  </main>
 
-      <main>
-        <div>
-            <h1>GALERÍA DE IMÁGENES</h1>
-        </div>
-        <div>
-            <div>
-                <h2>Equipo 1 vs Equipo 3</h2>
-            </div>
-            <div>
-                <img src="" alt="ImgsPartido">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-            <div>
-                <h2>Día 1</h2>
-            </div>
-            <div>
-                <img src="" alt="ImgsDia1">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-        </div>
+  <footer class="container text-center">
+    <!-- ... Tu código de pie de página ... -->
+  </footer>
 
-      </main>
-      <footer class="container text-center">
-
-        <div class="row">
-          <div class="col">
-            <img src="img/Gobierno de Cantabria.png" alt="Gobierno de Cantabria">
-          </div>
-          <div class="col">
-            <img src="img/Ministerio de Educación y Formación Profesional.png" alt="Ministerio de Educación y Formación Profesional">
-          </div>
-          <div class="col">
-            <img src="img/Fondos Europeos.png" alt="Fondos Europeos">
-          </div>
-        </div>
-    
-        <div class="row">
-          <div class="col"> 
-            <img src="img/Cofinanciado por la Unión Europea.png" alt="Cofinanciado por la Unión Europea">
-    
-          </div>
-          <div class="col">
-            <img src="img/cit.gif" alt="Cit">
-          </div>
-          <div class="col">
-            <img src="img/LOGO_COLOR_Seidor.png" alt="Seidor">
-          </div>
-          <div class="col">
-            <img src="img/Nueva Vida.png" alt="Nueva Vida">
-          </div>
-        </div>
-    
-      </footer>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha384-o3+DpeJeQlCG9tA0+Uy4P97wXekAu2/Ba/xvpfxhVfa+IbbVYUew+OrCXaRkfjLv"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

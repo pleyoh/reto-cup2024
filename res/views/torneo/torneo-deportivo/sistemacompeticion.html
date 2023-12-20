@@ -17,10 +17,15 @@
       overflow: hidden;
       transition: max-height 0.3s ease-out;
     }
-  
+
     details[open] .desplegable-contenido {
-      max-height: 1000px; /* o un valor máximo que sea suficientemente grande */
+      max-height: 1000px;
+      /* o un valor máximo que sea suficientemente grande */
       transition: max-height 0.5s ease-in;
+    }
+
+    .reglamento-card {
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -146,153 +151,327 @@
         <h1>REGLAMENTO</h1>
       </div>
     </div>
+
+    <!-- Sección: DURACIÓN -->
     <div class="row">
       <div class="col">
-        <details>
-          <summary class="animate__animated animate__fadeIn">DURACIÓN</summary>
-          <p class="desplegable-contenido">
-            La duración de los partidos será de 10 minutos en la fase de grupos y de 20 minutos en la fase final (a
-            tiempo corrido). Los dos primeros clasificados pasarán a la fase final del torneo.
-          </p>
-        </details>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <details>
-          <summary class="animate__animated animate__fadeIn">PUNTUALIDAD</summary>
-          <p>
-            Los equipos deberán estar preparados en el campo 5 minutos antes del inicio del partido o antes, si se
-            tienen que preparar en los vestuarios.
-          </p>
-        </details>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <details>
-          <summary class="animate__animated animate__fadeIn">PUNTUACIONES</summary>
-          <div>
-            <ul>
-              <li>3 puntos partido ganado</li>
-              <li>1 punto partido empatado</li>
-              <li>0 puntos partido perdido</li>
-            </ul>
+        <div class="card reglamento-card">
+          <div class="card-header animate__animated animate__fadeIn">
+            <h5 class="mb-0">
+              <button class="btn " data-bs-toggle="collapse" data-bs-target="#reglamento1" aria-expanded="true"
+                aria-controls="reglamento1">
+                DURACIÓN
+              </button>
+            </h5>
           </div>
-        </details>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <details>
-          <summary class="animate__animated animate__fadeIn">CRITERIOS DE CLASIFICACIÓN</summary>
-          <p>Gol-average: es la diferencia que resulta entre los goles marcados y los recibidos por un mismo equipo a lo
-            largo de una determinada competencia, temporada o campeonato. (Se debe usar en caso de que 2 equipos estén
-            empatados a puntos)</p>
-        </details>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <details>
-          <summary class="animate__animated animate__fadeIn">COMPORTAMIENTO</summary>
-          <p>El equipo que provoque la suspensión de un partido será sancionado con la pérdida del encuentro por 0 goles
-            a 3, salvo que en el momento de la suspensión el resultado fuera desfavorable por un mayor tanteo en su
-            contra. El mal comportamiento puede llevar a la expulsión del torneo (ser expulsado de un partido, se
-            considera mal comportamiento). No se permitirá bajo ninguna circunstancia ningún tipo de insulto o
-            comentario ofensivo sobre ningún contrario ni persona del lugar, en ese caso será expulsado y puede
-            conllevar depende de la gravedad una sanción. </p>
-        </details>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <details>
-          <summary class="animate__animated animate__fadeIn">SAQUES DE BANDA/ESQUINA/PORTERÍA </summary>
-          <div>
-            <ul>
-              <li>Banda: el equipo contrario sacara en con los pies en caso de que al rival se le vaya el balón por los
-                laterales del campo (no se puede marcar gol directo) </li>
-              <li>Esquina: en caso de que al equipo se le vaya el balón por la línea de fondo de la portería, el balón
-                será dado al equipo rival y se sacará desde la esquina con los pies en el otro caso que salga por parte
-                del equipo rival, será saque de puerta (valen tiros a puerta o goles desde la esquina) </li>
-            </ul>
+
+          <div id="reglamento1" class="collapse show">
+            <div class="card-body desplegable-contenido">
+              La duración de los partidos será de 10 minutos en la fase de grupos y de 20 minutos en la fase
+              final (a tiempo corrido). Los dos primeros clasificados pasarán a la fase final del torneo.
+            </div>
           </div>
-        </details>
+        </div>
       </div>
     </div>
+
+    <!-- Sección: PUNTUALIDAD -->
     <div class="row">
       <div class="col">
-        <details>
-          <summary class="animate__animated animate__fadeIn">FALTAS</summary>
-          <div>
-            <dl>
-              <dt>Dependiendo de la gravedad de la falta en el terreno de juego (puede ser verbal o física a un
-                jugador/arbitro), el árbitro puede amonestar al jugador de la siguiente manera: </dt>
-              <dd>Falta leve o poco importante: puede hacer un aviso verbal para informar al jugador de que no sigue una
-                conducta correcta. </dd>
-              <dd>Falta media: este le amonestará con una tarjeta amarilla y en caso de haber dos faltas con tarjeta
-                amarilla este será expulsado durante un partido. </dd>
-              <dd>Falta grave: este será expulsado durante un partido o mas dependiendo de la gravedad de la falta.
-              </dd>
-            </dl>
+        <div class="card reglamento-card">
+          <div class="card-header animate__animated animate__fadeIn">
+            <h5 class="mb-0">
+              <button class="btn " data-bs-toggle="collapse" data-bs-target="#reglamento2" aria-expanded="true"
+                aria-controls="reglamento2">
+                PUNTUALIDAD
+              </button>
+            </h5>
           </div>
-        </details>
+
+          <div id="reglamento2" class="collapse">
+            <div class="card-body desplegable-contenido">
+              Los equipos deberán estar preparados en el campo 5 minutos antes del inicio del partido o antes,
+              si se tienen que preparar en los vestuarios.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Sección: PUNTUACIONES -->
     <div class="row">
       <div class="col">
-        <details>
-          <summary class="animate__animated animate__fadeIn">CESIÓN</summary>
-          <p>Siempre es cesión. Cuando el portero después de haber despejado el balón o ponerlo en juego por él mismo lo
-            vuelve a jugar con los pies tras recibirlo de un compañero de forma voluntaria sin que el balón haya
-            traspasado el medio campo o haya sido tocado por un jugador contrario. </p>
-        </details>
+        <div class="card reglamento-card">
+          <div class="card-header animate__animated animate__fadeIn">
+            <h5 class="mb-0">
+              <button class="btn " data-bs-toggle="collapse" data-bs-target="#reglamento3" aria-expanded="true"
+                aria-controls="reglamento3">
+                PUNTUACIONES
+              </button>
+            </h5>
+          </div>
+
+          <div id="reglamento3" class="collapse">
+            <div class="card-body desplegable-contenido">
+              <ul>
+                <li>3 puntos partido ganado</li>
+                <li>1 punto partido empatado</li>
+                <li>0 puntos partido perdido</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Sección: CRITERIOS DE CLASIFICACIÓN -->
     <div class="row">
       <div class="col">
-        <details>
-          <summary class="animate__animated animate__fadeIn">EQUIPACIÓN</summary>
-          <p>Todo integrante del equipo deberá llevar su respectiva equipación para entrar al terreno de juego, la cual
-            se diferenciará de la de los árbitros. Si este no es el caso, no podrá entrar a jugar. </p>
-        </details>
+        <div class="card reglamento-card">
+          <div class="card-header animate__animated animate__fadeIn">
+            <h5 class="mb-0">
+              <button class="btn " data-bs-toggle="collapse" data-bs-target="#reglamento4" aria-expanded="true"
+                aria-controls="reglamento4">
+                CRITERIOS DE CLASIFICACIÓN
+              </button>
+            </h5>
+          </div>
+
+          <div id="reglamento4" class="collapse">
+            <div class="card-body desplegable-contenido">
+              Gol-average: es la diferencia que resulta entre los goles marcados y los recibidos por un mismo
+              equipo a lo largo de una determinada competencia, temporada o campeonato. (Se debe usar en caso
+              de que 2 equipos estén empatados a puntos)
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Sección: COMPORTAMIENTO -->
     <div class="row">
       <div class="col">
-        <details>
-          <summary class="animate__animated animate__fadeIn">COMPOSICIÓN DE EQUIPOS</summary>
-          <p>En cada equipo deberán estar 5 jugadores en el terreno de juego incluyendo al portero.</p>
-        </details>
+        <div class="card reglamento-card">
+          <div class="card-header animate__animated animate__fadeIn">
+            <h5 class="mb-0">
+              <button class="btn " data-bs-toggle="collapse" data-bs-target="#reglamento5" aria-expanded="true"
+                aria-controls="reglamento5">
+                COMPORTAMIENTO
+              </button>
+            </h5>
+          </div>
+
+          <div id="reglamento5" class="collapse">
+            <div class="card-body desplegable-contenido">
+              El equipo que provoque la suspensión de un partido será sancionado con la pérdida del encuentro
+              por 0 goles a 3, salvo que en el momento de la suspensión el resultado fuera desfavorable por
+              un mayor tanteo en su contra. El mal comportamiento puede llevar a la expulsión del torneo (ser
+              expulsado de un partido, se considera mal comportamiento). No se permitirá bajo ninguna
+              circunstancia ningún tipo de insulto o comentario ofensivo sobre ningún contrario ni persona del
+              lugar, en ese caso será expulsado y puede conllevar depende de la gravedad una sanción.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Sección: SAQUES DE BANDA/ESQUINA/PORTERÍA -->
     <div class="row">
       <div class="col">
-        <details>
-          <summary class="animate__animated animate__fadeIn">CAMBIOS</summary>
-          <p>Los cambios serán ilimitados, para que todos los jugadores tengan su tiempo de juego. </p>
-        </details>
+        <div class="card reglamento-card">
+          <div class="card-header animate__animated animate__fadeIn">
+            <h5 class="mb-0">
+              <button class="btn " data-bs-toggle="collapse" data-bs-target="#reglamento6" aria-expanded="true"
+                aria-controls="reglamento6">
+                SAQUES DE BANDA/ESQUINA/PORTERÍA
+              </button>
+            </h5>
+          </div>
+
+          <div id="reglamento6" class="collapse">
+            <div class="card-body desplegable-contenido">
+              <ul>
+                <li>Banda: el equipo contrario sacará con los pies en caso de que al rival se le vaya el
+                  balón por los laterales del campo (no se puede marcar gol directo) </li>
+                <li>Esquina: en caso de que al equipo se le vaya el balón por la línea de fondo de la
+                  portería, el balón será dado al equipo rival y se sacará desde la esquina con los pies en
+                  el otro caso que salga por parte del equipo rival, será saque de puerta (valen tiros a
+                  puerta o goles desde la esquina) </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Sección: FALTAS -->
     <div class="row">
       <div class="col">
-        <details>
-          <summary class="animate__animated animate__fadeIn">GOL</summary>
-          <p>El gol solo subirá al marcador cuando traspase completamente la línea de gol </p>
-        </details>
+        <div class="card reglamento-card">
+          <div class="card-header animate__animated animate__fadeIn">
+            <h5 class="mb-0">
+              <button class="btn " data-bs-toggle="collapse" data-bs-target="#reglamento7" aria-expanded="true"
+                aria-controls="reglamento7">
+                FALTAS
+              </button>
+            </h5>
+          </div>
+
+          <div id="reglamento7" class="collapse">
+            <div class="card-body desplegable-contenido">
+              <dl>
+                <dt>Dependiendo de la gravedad de la falta en el terreno de juego (puede ser verbal o física a
+                  un jugador/arbitro), el árbitro puede amonestar al jugador de la siguiente manera: </dt>
+                <dd>Falta leve o poco importante: puede hacer un aviso verbal para informar al jugador de
+                  que no sigue una conducta correcta. </dd>
+                <dd>Falta media: este le amonestará con una tarjeta amarilla y en caso de haber dos faltas
+                  con tarjeta amarilla este será expulsado durante un partido. </dd>
+                <dd>Falta grave: este será expulsado durante un partido o más dependiendo de la gravedad de
+                  la falta. </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Sección: CESIÓN -->
     <div class="row">
       <div class="col">
-        <details>
-          <summary class="animate__animated animate__fadeIn">PORTERIAS</summary>
-          <p>La distancia entre los postes será de 3 metros y la distancia del borde inferior del travesaño al suelo
-            será de 2 metros, debiendo disponer las porterías por motivo de seguridad de un sistema antivuelco. </p>
-        </details>
+        <div class="card reglamento-card">
+          <div class="card-header animate__animated animate__fadeIn">
+            <h5 class="mb-0">
+              <button class="btn " data-bs-toggle="collapse" data-bs-target="#reglamento8" aria-expanded="true"
+                aria-controls="reglamento8">
+                CESIÓN
+              </button>
+            </h5>
+          </div>
+
+          <div id="reglamento8" class="collapse">
+            <div class="card-body desplegable-contenido">
+              Siempre es cesión. Cuando el portero después de haber despejado el balón o ponerlo en juego por
+              él mismo lo vuelve a jugar con los pies tras recibirlo de un compañero de forma voluntaria sin
+              que el balón haya traspasado el medio campo o haya sido tocado por un jugador contrario.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección: EQUIPACIÓN -->
+    <div class="row">
+      <div class="col">
+        <div class="card reglamento-card">
+          <div class="card-header animate__animated animate__fadeIn">
+            <h5 class="mb-0">
+              <button class="btn " data-bs-toggle="collapse" data-bs-target="#reglamento9" aria-expanded="true"
+                aria-controls="reglamento9">
+                EQUIPACIÓN
+              </button>
+            </h5>
+          </div>
+
+          <div id="reglamento9" class="collapse">
+            <div class="card-body desplegable-contenido">
+              Todo integrante del equipo deberá llevar su respectiva equipación para entrar al terreno de juego,
+              la cual se diferenciará de la de los árbitros. Si este no es el caso, no podrá entrar a jugar.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección: COMPOSICIÓN DE EQUIPOS -->
+    <div class="row">
+      <div class="col">
+        <div class="card reglamento-card">
+          <div class="card-header animate__animated animate__fadeIn">
+            <h5 class="mb-0">
+              <button class="btn " data-bs-toggle="collapse" data-bs-target="#reglamento10" aria-expanded="true"
+                aria-controls="reglamento10">
+                COMPOSICIÓN DE EQUIPOS
+              </button>
+            </h5>
+          </div>
+
+          <div id="reglamento10" class="collapse">
+            <div class="card-body desplegable-contenido">
+              En cada equipo deberán estar 5 jugadores en el terreno de juego incluyendo al portero.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección: CAMBIOS -->
+    <div class="row">
+      <div class="col">
+        <div class="card reglamento-card">
+          <div class="card-header animate__animated animate__fadeIn">
+            <h5 class="mb-0">
+              <button class="btn " data-bs-toggle="collapse" data-bs-target="#reglamento11" aria-expanded="true"
+                aria-controls="reglamento11">
+                CAMBIOS
+              </button>
+            </h5>
+          </div>
+
+          <div id="reglamento11" class="collapse">
+            <div class="card-body desplegable-contenido">
+              Los cambios serán ilimitados, para que todos los jugadores tengan su tiempo de juego.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección: GOL -->
+    <div class="row">
+      <div class="col">
+        <div class="card reglamento-card">
+          <div class="card-header animate__animated animate__fadeIn">
+            <h5 class="mb-0">
+              <button class="btn " data-bs-toggle="collapse" data-bs-target="#reglamento12" aria-expanded="true"
+                aria-controls="reglamento12">
+                GOL
+              </button>
+            </h5>
+          </div>
+
+          <div id="reglamento12" class="collapse">
+            <div class="card-body desplegable-contenido">
+              El gol solo subirá al marcador cuando traspase completamente la línea de gol.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección: PORTERIAS -->
+    <div class="row">
+      <div class="col">
+        <div class="card reglamento-card">
+          <div class="card-header animate__animated animate__fadeIn">
+            <h5 class="mb-0">
+              <button class="btn " data-bs-toggle="collapse" data-bs-target="#reglamento13" aria-expanded="true"
+                aria-controls="reglamento13">
+                PORTERÍAS
+              </button>
+            </h5>
+          </div>
+
+          <div id="reglamento13" class="collapse">
+            <div class="card-body desplegable-contenido">La distancia entre los postes será de 3 metros y la distancia
+              del borde inferior del travesaño al suelo será de 2 metros, debiendo disponer las porterías por motivo de
+              seguridad de un sistema antivuelco.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
+
 
   <footer class="container text-center">
 
