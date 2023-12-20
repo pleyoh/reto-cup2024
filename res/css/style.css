@@ -81,6 +81,24 @@ main > * {
   }
 }
 
+@media (max-width: 767.5px) {
+  .patrocinadores2 div a img {
+    height: 15px !important;
+  }
+
+  .apoyos a .img-apoyo {
+    height: 25px !important ;
+  }
+
+  .cosas {
+    font-size: 0.7rem;
+  }
+
+  .cosas img {
+    height: 10px;
+  }
+}
+
 @media (max-width: 1199.5px) {
   .patrocinadores1 div a img {
     height: auto;
@@ -106,6 +124,14 @@ main > * {
 
   .dropdown-menu {
     border: none !important;
+  }
+
+  .patrocinadores2 div a img {
+    height: 28px;
+  }
+
+  .apoyos a img {
+    height: 38px !important;
   }
 }
 
@@ -259,7 +285,7 @@ footer .segunda img {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .patrocinadores1 div span {
@@ -269,11 +295,18 @@ footer .segunda img {
 }
 
 .apoyos a img {
-  height: 40px;
+  height: 60px;
 }
 
 .patrocinadores2 a img {
-  height: 30px;
+  height: 50px;
 }
 
-/* logotipos */
+.carousel-item {
+  height: 300px;
+  object-fit: cover;
+}
+
+.cosas img {
+  height: 20px;
+}
