@@ -95,7 +95,7 @@ main > * {
   }
 
   .cosas img {
-    height: 10px;
+    height: 10px !important;
   }
 }
 
@@ -308,5 +308,5 @@ footer .segunda img {
 }
 
 .cosas img {
-  height: 20px;
+  height: 15px;
 }
