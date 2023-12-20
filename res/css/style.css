@@ -86,6 +86,11 @@ main > * {
 }
 
 /** media-queries */
+@media (max-width: 500px) {
+  .patrocinadores1 div span a img {
+    height: 20px;
+  }
+}
 
 @media (max-width: 1199.5px) {
   .patrocinadores1 div a img {
