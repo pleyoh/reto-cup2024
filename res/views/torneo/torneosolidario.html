@@ -5,17 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Torneo Solidario</title>
     <!-- <link rel="stylesheet" href="./res/css/style.css"> -->
-  <link rel="stylesheet" href="./src/main.css">
+  <link rel="stylesheet" href="../../css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      main {
+          padding: 30px;
+          background-color: #f8f9fa; /* Fondo gris claro */
+          border-radius: 10px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          margin-top: 20px;
+          color: #495057; /* Color del texto */
+      }
+
+      h1 {
+          font-size: 2.5em;
+          margin-bottom: 20px;
+          color: #343a40; /* Color del título */
+      }
+
+      p {
+          font-size: 1.2em;
+          line-height: 1.6;
+          margin-bottom: 15px;
+      }
+
+      img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+          margin-top: 15px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      h3 {
+          font-size: 1.8em;
+          margin-top: 20px;
+          color: #343a40; /* Color del subtítulo */
+      }
+  </style>
 </head>
 <body>
   <header class="d-flex justify-content-between">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-xl d-flex flex-row pb-0">
       <!-- Logo de la izquierda -->
       <div class="contenedor1 me-5 d-flex align-items-center gap-3 flex-row">
         <div class="d-flex flex-row flex align-items-center gap-3 ms-4">
-          <img src="./res/img/logoleon.png" alt="Mini Logo" class="logo-nav">
+          <img src="../../img/logos/logoleon.png" alt="Mini Logo" class="logo-nav">
           <a class="navbar-brand" href="./index-bootstrap.html">IES Augusto Cup</a>
         </div>
 
@@ -24,12 +60,15 @@
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+      </div>
+      <div class="container-fluid mt-2 pb-1">
+        <!-- Enlace de la pagina principal -->
 
         <!-- Inicio de los elementos del menu -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse ms-3" id="navbarNav">
+          <ul class="navbar-nav ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link activo" aria-current="page" href="#">Inicio</a>
             </li>
 
             <!-- Lista de equipos -->
@@ -38,7 +77,7 @@
                 aria-expanded="false">Equipos
               </a>
               <!-- Elementos del sub menu -->
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu bg-dark">
                 <li><a class="dropdown-item" href="#">Equipo 1</a></li>
                 <li><a class="dropdown-item" href="#">Equipo 2</a></li>
 
@@ -49,37 +88,68 @@
             <!-- Lista de Organizacion -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Organización
+                aria-expanded="false">Organizacion
               </a>
               <!-- Elementos del sub menu -->
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu  bg-dark">
                 <li><a class="dropdown-item" href="#">Comisión de organización</a></li>
                 <li><a class="dropdown-item" href="#">Retos</a></li>
 
               </ul>
             </li>
             <!-- Lista de Torneo -->
-            <!--! ########################## -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-auto-close="outside"
                 data-bs-toggle="dropdown" aria-expanded="false">Torneo
               </a>
               <!-- Elementos del sub menu -->
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu  bg-dark">
                 <li><a class="dropdown-item" href="#">Torneo solidario</a></li>
 
                 <li class="dropstart">
                   <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Torneo deportivo</a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu  bg-dark">
                     <li><a class="dropdown-item" href="#">Sistema de competición</a></li>
                     <li><a class="dropdown-item" href="#">Clasificación</a></li>
                     <li><a class="dropdown-item" href="#">Resultados</a></li>
                     <li><a class="dropdown-item" href="#">Galería</a></li>
                   </ul>
                 </li>
-                <!-- Lista de Torneo nosq-->
+                <!-- Lista de Objetivos-->
                 <!-- Elementos del sub menu -->
               </ul>
+            </li>
+            <!-- Lista de Organizacion -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Objetivos
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item" href="#">Generales</a></li>
+                <li><a class="dropdown-item" href="#">ODS</a></li>
+
+                <!-- Agregar equipos a conveniencia -->
+              </ul>
+            </li>
+            <!-- Lista de Organizacion -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Colaboraciones
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item" href="#">Apoyos al proyecto</a></li>
+                <li><a class="dropdown-item" href="#">Patrocinadores</a></li>
+
+                <!-- Agregar equipos a conveniencia -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">F&Q</a>
             </li>
           </ul>
         </div>
@@ -88,7 +158,6 @@
     </nav>
 
   </header>
-  
       <main>
         <div>
             <h1>TORNEO SOLIDARIO</h1>
@@ -97,14 +166,14 @@
             <p>Para alcanzar una de las metas del ODS hambre cero este proyecto buscará recoger la mayor cantidad de alimentos y recursos económicos posibles. La ONG Nueva Vida gestionará tanto los alimentos no perecederos recogidos como los recursos económicos generados, para que lleguen a las realidades sociales que más lo necesitan y trabajarán con el alumnado la concienciación y la sensibilización.​</p>
         </div>
         <div>
-            <img src="res/img/imgLevantandoManos.jpeg" alt="imgEjemplo1">
+            <img src="../../img/fotografias/celebracion/imgLevantandoManos.jpeg" alt="imgEjemplo1">
         </div>
         <div>
             <h3>RECOGIDA DE ALIMENTOS:</h3>
             <p>Se “disputará” el Torneo Solidario, de manera paralela a la celebración del Torneo Deportivo. Los mismos equipos que participan en el Torneo Deportivo tratarán de convertirse en el equipo campeón del Torneo Solidario. Para conseguirlo, deberán ser capaces de recaudar la mayor cantidad de alimentos posibles. Pero no solamente a través de los que los componentes del equipo donen si no que sus compañeros de clase, sus amistades y sus familiares podrán también colaborar con su equipo para alzarse con el trofeo al equipo campeón del Torneo Solidario. Este trofeo será entregado por las autoridades invitadas a presenciar el evento.</p>
         </div>
         <div>
-            <img src="res/img/imgLevantandoManos2.jpeg" alt="imgEjemplo2">
+            <img src="../../img/fotografias/celebracion/imgLevantandoManos.jpeg" alt="imgEjemplo2">
         </div>
         <div>
             <h3>PATROCINIOS:</h3>
@@ -116,7 +185,7 @@
             </p>
         </div>
         <div>
-            <img src="res/img/imgCelebracion1.jpeg" alt="imgEjemplo3">
+            <img src="../../img/fotografias/celebracion/imgCelebracion1.jpeg" alt="imgEjemplo3">
         </div>
         <div>
             <h3>RECAUDACIÓN DE FONDOS ECONÓMICOS</h3>
