@@ -90,6 +90,10 @@ main > * {
   .patrocinadores1 div span a img {
     height: 20px;
   }
+
+  .portada h1 {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 1199.5px) {
