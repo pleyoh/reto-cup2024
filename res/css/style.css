@@ -303,8 +303,9 @@ footer .segunda img {
 }
 
 .carousel-item {
-  height: 300px;
-  object-fit: cover;
+  height: 300px !important;
+  max-width: 800px !important;
+  object-fit: cover !important;
 }
 
 .cosas img {
