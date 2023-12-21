@@ -38,7 +38,7 @@ body p {
 
 body a {
   font-family: "Nunito";
-} 
+}
 
 .activo {
   color: var(--cup-primary) !important;
@@ -288,4 +288,27 @@ footer .segunda img {
 
 .avisolegal p {
   border-left: 2px black solid;
+}
+
+/* Pagina de OGS */
+
+.fondo-ods:nth-of-type(1) {
+  height: 200px;
+  background-color: #e02b40;
+  transition: 0.2s;
+}
+
+.fondo-ods:nth-of-type(2) {
+  height: 200px;
+  background-color: #d19f2a;
+}
+
+.fondo-ods:nth-of-type(3) {
+  height: 200px;
+  background-color: #4c9f38;
+}
+
+.fondo-ods p{
+  color: white;
+  font-weight: bolder;
 }
