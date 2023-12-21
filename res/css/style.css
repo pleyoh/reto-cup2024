@@ -15,7 +15,7 @@
   --cup-body-bg: #dcdad7;
   --cup-black: #000;
   --cup-white: #fff;
-  --cup-light: #f8f9fa;
+  --cup-light: #f3f1ef;
   --cup-dark: #212529;
 
   /* fuentes */
@@ -94,6 +94,14 @@ main > * {
 }
 
 @media (max-width: 767.5px) {
+  .principal .flex-row {
+    flex-flow: column nowrap !important;
+  }
+
+  .contenedor-colaboradores {
+    height: auto !important;
+  }
+
   .patrocinadores2 div a img {
     height: 15px !important;
   }
@@ -329,15 +337,45 @@ footer .segunda img {
   max-height: 500px !important;
 }
 
+/* cartas patrocinadores */
+.card {
+  height: 400px !important;
+  /* min-width: 200px !important;
+  max-width: 600px !important; */
+  max-width: 500px !important;
+
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.card-text {
+  max-height: 200px !important;
+  overflow-y: scroll;
+}
+
+.contenedor-colaboradores {
+  margin: 3rem 2rem;
+  height: 400px;
+  /* background: red; */
+
+  display: flex;
+  flex-flow: row;
+  gap: 3rem;
+}
+
+.carousel,
+.carousel-inner {
+  max-height: 400px !important;
+}
 /* Pagina de la ODS */
-.fondo-ods:nth-of-type(1){
+.fondo-ods:nth-of-type(1) {
   background-color: #e02b40;
 }
 
-.fondo-ods:nth-of-type(2){
+.fondo-ods:nth-of-type(2) {
   background-color: #d19f2a;
 }
 
-.fondo-ods:nth-of-type(3){
+.fondo-ods:nth-of-type(3) {
   background-color: #4c9f38;
 }
