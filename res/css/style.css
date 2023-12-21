@@ -120,6 +120,11 @@ main > * {
 }
 
 @media (max-width: 1199.5px) {
+  .torneo div {
+    display: flex;
+    flex-flow: column;
+  }
+
   .redes {
     margin-left: 0 !important;
   }
