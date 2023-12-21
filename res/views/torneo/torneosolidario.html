@@ -15,15 +15,17 @@
       background-color: #f8f9fa;
       /* Fondo gris claro */
       margin-top: 20px;
-      color: #495057;
+      color: #000000;
       /* Color del texto */
     }
 
     h1 {
+      margin-top: 20px;
       font-size: 2.5em;
       margin-bottom: 20px;
-      color: #343a40;
-      /* Color del título */
+
+      padding-left: 20px;
+      border-left: 4px black solid;
     }
 
     p {
@@ -34,11 +36,14 @@
 
 
 
-    h3 {
-      font-size: 1.8em;
+    h2 {
+      font-family: "Bebas Neue", sans-serif;
+
       margin-top: 20px;
-      color: #343a40;
+      color: #000000;
       /* Color del subtítulo */
+      padding-left: 20px;
+      border-left: 4px black solid;
     }
   </style>
 </head>
@@ -103,16 +108,19 @@
               </a>
               <!-- Elementos del sub menu -->
               <ul class="dropdown-menu  bg-dark">
-                <li><a class="dropdown-item activo" href="../../views/torneo/torneosolidario.html">Torneo solidario</a></li>
+                <li><a class="dropdown-item activo" href="../../views/torneo/torneosolidario.html">Torneo solidario</a>
+                </li>
 
                 <li class="dropstart">
                   <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Torneo deportivo</a>
                   <ul class="dropdown-menu  bg-dark">
                     <li><a class="dropdown-item"
-                        href="../../views/torneo/torneo-deportivo/sistemacompeticion.html">Sistema de competición</a></li>
+                        href="../../views/torneo/torneo-deportivo/sistemacompeticion.html">Sistema de competición</a>
+                    </li>
                     <li><a class="dropdown-item"
                         href="../../views/torneo/torneo-deportivo/clasificacion.html">Clasificación</a></li>
-                    <li><a class="dropdown-item" href="../../views/torneo/torneo-deportivo/resultados.html">Resultados</a>
+                    <li><a class="dropdown-item"
+                        href="../../views/torneo/torneo-deportivo/resultados.html">Resultados</a>
                     </li>
                     <li><a class="dropdown-item" href="../../views/torneo/torneo-deportivo/galeriaImg.html">Galería</a>
                     </li>
@@ -145,7 +153,8 @@
                 <li class="dropstart">
                   <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Apoyos al proyecto</a>
                   <ul class="dropdown-menu  bg-dark">
-                    <li><a class="dropdown-item" href="../../views/colaboraciones/apoyos/apoyos_IESPeñacastillo.html">IES
+                    <li><a class="dropdown-item"
+                        href="../../views/colaboraciones/apoyos/apoyos_IESPeñacastillo.html">IES
                         Peñacastillo</a></li>
                     <li><a class="dropdown-item" href="../../views/colaboraciones/apoyos/apoyos_IESAGL.html">IES AGL</a>
                     </li>
@@ -175,7 +184,8 @@
                     </li>
                     <li><a class="dropdown-item" href="../../views/colaboraciones/patrocinadores/seidor.html">SEIDOR</a>
                     </li>
-                    <li><a class="dropdown-item" href="../../views/colaboraciones/patrocinadores/soincon.html">SOINCON</a>
+                    <li><a class="dropdown-item"
+                        href="../../views/colaboraciones/patrocinadores/soincon.html">SOINCON</a>
                     </li>
                   </ul>
                 </li>
@@ -230,7 +240,7 @@
       <img src="../../../res/img/fotografias/celebracion/imgLevantandoManos.jpeg" alt="imgEjemplo1">
     </div>
     <div>
-      <h3>RECOGIDA DE ALIMENTOS:</h3>
+      <h2>RECOGIDA DE ALIMENTOS:</h2>
       <p>Se “disputará” el Torneo Solidario, de manera paralela a la celebración del Torneo Deportivo. Los mismos
         equipos que participan en el Torneo Deportivo tratarán de convertirse en el equipo campeón del Torneo Solidario.
         Para conseguirlo, deberán ser capaces de recaudar la mayor cantidad de alimentos posibles. Pero no solamente a
@@ -242,7 +252,7 @@
       <img src="../../../res/img/fotografias/celebracion/imgLevantandoManos.jpeg" alt="imgEjemplo2">
     </div>
     <div>
-      <h3>PATROCINIOS:</h3>
+      <h2>PATROCINIOS:</h2>
       <p>
         Por otra parte, a cada uno de los diez equipos participantes se les asignará un patrocinador. El patrocinador
         asignado a cada equipo se decidirá por sorteo. Las condiciones para que una empresa del entorno del IES Augusto
@@ -259,7 +269,7 @@
       <img src="../../../res/img/fotografias/celebracion/imgCelebracion1.jpeg" alt="imgEjemplo3">
     </div>
     <div>
-      <h3>RECAUDACIÓN DE FONDOS ECONÓMICOS</h3>
+      <h2>RECAUDACIÓN DE FONDOS ECONÓMICOS</h2>
       <p>
         Durante la fase final se venderán agua, bebidas isotónicas y alimentos
         saludables preparados por los alumnos del Ciclo Formativo de Cocina del IES
@@ -278,18 +288,25 @@
         <div class="d-flex flex-column patrocinadores2 gap-3">
           <div class="d-flex flex-row gap-5 justify-content-center">
             <!-- TODO: cambiar ruta -->
-            <a href="../../views/colaboraciones/patrocinadores/deode.html"><img src="../../img/logos/Logo_Deode.png" alt="Deode"></a>
-            <a href="../../views/colaboraciones/patrocinadores/seidor.html"><img src="../../img/logos/LOGO_COLOR_Seidor.png" alt="Seidor"></a>
-            <a href="../../views/colaboraciones/patrocinadores/cic.html"><img src="../../img/logos/cit.png" alt="Cit"></a>
-            <a href="../../views/colaboraciones/patrocinadores/infortec.html"><img src="../../img/logos/Infortec.png" alt="Infortec"></a>
+            <a href="../../views/colaboraciones/patrocinadores/deode.html"><img src="../../img/logos/Logo_Deode.png"
+                alt="Deode"></a>
+            <a href="../../views/colaboraciones/patrocinadores/seidor.html"><img
+                src="../../img/logos/LOGO_COLOR_Seidor.png" alt="Seidor"></a>
+            <a href="../../views/colaboraciones/patrocinadores/cic.html"><img src="../../img/logos/cit.png"
+                alt="Cit"></a>
+            <a href="../../views/colaboraciones/patrocinadores/infortec.html"><img src="../../img/logos/Infortec.png"
+                alt="Infortec"></a>
           </div>
           <div class="d-flex flex-row gap-5 justify-content-center">
-            <a href="../../views/colaboraciones/patrocinadores/siali.html"><img class="siali" src="../../img/logos/Siali_tech.png" alt="Siali"></a>
-            <a href="../../views/colaboraciones/patrocinadores/soincon.html"><img src="../../img/logos/Soincon.png" alt="Soincon"></a>
+            <a href="../../views/colaboraciones/patrocinadores/siali.html"><img class="siali"
+                src="../../img/logos/Siali_tech.png" alt="Siali"></a>
+            <a href="../../views/colaboraciones/patrocinadores/soincon.html"><img src="../../img/logos/Soincon.png"
+                alt="Soincon"></a>
             <a
               href="https://www.hacienda.gob.es/es-ES/Areas%20Tematicas/Fondos%20de%20la%20Union%20Europea/Paginas/default.aspx"><img
                 src="../../img/logos/fondos-europeos.png" alt="Fondos Europeos"></a>
-            <a href="../../views/colaboraciones/apoyos/apoyos_asociacionNV.html"><img src="../../img/logos/Nueva Vida.png" alt="Nueva Vida"></a>
+            <a href="../../views/colaboraciones/apoyos/apoyos_asociacionNV.html"><img
+                src="../../img/logos/Nueva Vida.png" alt="Nueva Vida"></a>
           </div>
         </div>
       </div>
@@ -302,7 +319,8 @@
           <a href="https://www.educacionyfp.gob.es/portada.html"><img class="img-apoyo"
               src="../../img/logos/Ministerio de Educación y Formación Profesional.png"
               alt="Ministerio de Educación y Formación Profesional"></a>
-          <a href="https://www.iesaglinares.com"><img class="img-apoyo" src="../../img/logos/IES_AUG.png" alt="IES AUG"></a>
+          <a href="https://www.iesaglinares.com"><img class="img-apoyo" src="../../img/logos/IES_AUG.png"
+              alt="IES AUG"></a>
         </div>
       </div>
     </div>
