@@ -120,6 +120,10 @@ main > * {
 }
 
 @media (max-width: 1199.5px) {
+  .redes {
+    margin-left: 0 !important;
+  }
+
   .patrocinadores1 div a img {
     height: auto;
     max-height: 30px;
@@ -173,7 +177,7 @@ header nav p {
   color: var(--cup-body-bg) !important;
 }
 
-.iconos-redes{
+.iconos-redes {
   width: 30px;
 }
 
@@ -348,6 +352,10 @@ footer .segunda img {
   box-shadow: none !important;
 }
 
+.card-body {
+  overflow-y: hidden !important;
+}
+
 .card-text {
   max-height: 200px !important;
   overflow-y: scroll;
@@ -378,4 +386,8 @@ footer .segunda img {
 
 .fondo-ods:nth-of-type(3) {
   background-color: #4c9f38;
+}
+
+.redes {
+  margin-left: 1.5rem;
 }
