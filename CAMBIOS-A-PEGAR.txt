@@ -134,7 +134,7 @@
                     </li>
                     <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/siali.html">Siali</a>
                     </li>
-                    <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/seidor.html">SEIDOR</a>
+                     
                     </li>
                     <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/soincon.html">SOINCON</a>
                     </li>
