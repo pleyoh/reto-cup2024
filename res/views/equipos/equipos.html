@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reto X</title>
-  <!-- <link rel="stylesheet" href="./res/css/style.css"> -->
-  <link rel="stylesheet" href="./src/main.css">
+  <title>Equipo X</title>
+  <link rel="stylesheet" href="../../css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -17,7 +16,7 @@
       <!-- Logo de la izquierda -->
       <div class="contenedor1 me-5 d-flex align-items-center gap-3 flex-row">
         <div class="d-flex flex-row flex align-items-center gap-3 ms-4">
-          <img src="./res/img/logos/logoleon.png" alt="Mini Logo" class="logo-nav">
+          <img src="../../img/logos/logoleon.png" alt="Mini Logo" class="logo-nav">
           <a class="navbar-brand" href="./index-bootstrap.html">IES Augusto Cup</a>
         </div>
 
@@ -34,7 +33,7 @@
         <div class="collapse navbar-collapse ms-3" id="navbarNav">
           <ul class="navbar-nav ">
             <li class="nav-item">
-              <a class="nav-link activo" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
             </li>
 
             <!-- Lista de equipos -->
@@ -133,38 +132,37 @@
                     <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/siali.html">Siali</a>
                     </li>
 
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/soincon.html">SOINCON</a>
+                    </li>
+                  </ul>
                 </li>
-                <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/soincon.html">SOINCON</a>
-                </li>
+                <!-- Lista de Objetivos-->
+                <!-- Elementos del sub menu -->
               </ul>
             </li>
-            <!-- Lista de Objetivos-->
-            <!-- Elementos del sub menu -->
-          </ul>
-          </li>
-          <!--!  -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Contacto
-            </a>
-            <!-- Elementos del sub menu -->
-            <ul class="dropdown-menu bg-dark">
-              <li><a class="dropdown-item" href="res/views/contacto/ubicacion.html">Ubicación</a></li>
-              <li><a class="dropdown-item" href="res/views/contacto/formulario.html">Formulario de contacto</a></li>
-              <li><a class="dropdown-item" href="res/views/contacto/donaciones.html">Donación</a></li>
+            <!--!  -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Contacto
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item" href="res/views/contacto/ubicacion.html">Ubicación</a></li>
+                <li><a class="dropdown-item" href="res/views/contacto/formulario.html">Formulario de contacto</a></li>
+                <li><a class="dropdown-item" href="res/views/contacto/donaciones.html">Donación</a></li>
 
-              <!-- Agregar equipos a conveniencia -->
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="res/views/f&q.html">F&Q</a>
-          </li>
+                <!-- Agregar equipos a conveniencia -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="res/views/f&q.html">F&Q</a>
+            </li>
 
           </ul>
 
           <!-- Redes  -->
           <div class=" redes align-self-center">
-            <a href="https://www.instagram.com/ies_augusto_cup/" class="me-4"><img src="./res/img/iconos/instagram.png"
+            <a href="https://www.instagram.com/ies_augusto_cup/" class="me-4"><img src="../../img/iconos/instagram.png"
                 alt="Instagram" class="iconos-redes"></a>
           </div>
 
@@ -175,29 +173,66 @@
 
   </header>
 
-
-
-
-
-  <main>
-    <div>
-      <div>
-        <img src="res/img/imgImagenSonido1.jpeg" alt="fotoCiclo">
-      </div>
-      <div>
-        <p>NOMBRE RETO</p>
-        <p>info reto</p>
+  <!-- Filas de 3 equipos como maximo -->
+  <div class="d-flex listado-equipos">
+    <!-- Tarjeta del Equipo 1 -->
+    <div class="card equipo-card m-4" data-toggle="collapse" data-target="#equipo1-info">
+      <img src="../../img/equipos/imgEquipo1.jpeg" alt="imgEquipo1" class="card-img-top">
+      <div class="card-body">
+        <a href="jugadores1.html">
+          <h5 class="card-title">Nombre Equipo 1</h5>
+        </a>
       </div>
     </div>
-    <div>
-      <div>
-        <p>Nombre Profesor</p>
-      </div>
-      <div>
-        <!--Faltan todos los alumnos-->
+
+
+    <!-- Tarjeta del Equipo 2 -->
+    <div class="card equipo-card m-4" data-toggle="collapse" data-target="#equipo2-info">
+      <img src="../../img/equipos/imgEquipo2.jpeg" alt="imgEquipo2" class="card-img-top">
+      <div class="card-body">
+        <a href="jugadores1.html">
+          <h5 class="card-title">Nombre Equipo 2</h5>
+        </a>
       </div>
     </div>
-  </main>
+
+    <!-- Tarjeta del Equipo 3 -->
+    <div class="card equipo-card m-4" data-toggle="collapse" data-target="#equipo3-info">
+      <img src="../../img/equipos/imgEquipo1.jpeg" alt="imgEquipo2" class="card-img-top">
+      <div class="card-body">
+        <a href="jugadores1.html">
+          <h5 class="card-title">Nombre Equipo 3</h5>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Agregar filas a conveniencia -->
+  <div class="d-flex listado-equipos ">
+    <!-- Tarjeta del Equipo 4 -->
+    <div class="card equipo-card m-4" data-toggle="collapse" data-target="#equipo4-info">
+      <img src="../../img/equipos/imgEquipo1.jpeg" alt="imgEquipo1" class="card-img-top">
+      <div class="card-body">
+        <a href="jugadores1.html">
+          <h5 class="card-title">Nombre Equipo 4</h5>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Tarjeta del Equipo 5 -->
+    <div class="card equipo-card m-4" data-toggle="collapse" data-target="#equipo5-info">
+      <img src="../../img/equipos/imgEquipo2.jpeg" alt="imgEquipo2" class="card-img-top">
+      <div class="card-body">
+        <a href="jugadores1.html">
+          <h5 class="card-title">Nombre Equipo 5</h5>
+        </a>
+      </div>
+    </div>
+
+    <!-- Agregar hasta 3 cartas dentro de cada fila -->
+  </div>
+
   <footer class="d-flex flex-column pt-3">
     <div class="d-flex flex-column justify-content-around pb-4 gap-3">
       <div class="d-flex flex-column justify-content-center align-items-center">
@@ -246,6 +281,15 @@
             src="../../img/logos/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" /></a></p>
     </div>
   </footer>
+
+  <!-- Enlaces a scripts de Bootstrap y jQuery (asegúrate de tener conexión a Internet para cargarlos) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
