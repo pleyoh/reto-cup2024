@@ -448,6 +448,11 @@ footer .segunda img {
   text-align: center;
 }
 
+.equipo-card a {
+  text-decoration: none;
+  color: var(--cup-white);
+}
+
 
 .equipo-card img {
   max-width: 80% !important;
@@ -463,7 +468,8 @@ footer .segunda img {
   margin: 50px auto;
 }
 
-.tarjeta-equipo .card-body {
+.tarjeta-equipo .card-body,
+.equipo-card .card-body {
   background-color: var(--cup-secondary);
   color: var(--cup-white);
   border-radius: 25px;
@@ -512,4 +518,10 @@ footer .segunda img {
   border-radius: 0 25px 25px 0;
   position: relative;
   right: 20px;
+}
+
+/* Pagina comision de organizacion */
+.accordion-item {
+  max-width: 500px;
+  margin: 50px;
 }
