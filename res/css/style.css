@@ -82,6 +82,14 @@ main > * {
 }
 
 @media (max-width: 767.5px) {
+  .principal .flex-row {
+    flex-flow: column nowrap !important;
+  }
+
+  .contenedor-colaboradores {
+    height: auto !important;
+  }
+
   .patrocinadores2 div a img {
     height: 15px !important;
   }
@@ -312,4 +320,35 @@ footer .segunda img {
   max-width: 800px !important;
 
   max-height: 500px !important;
+}
+
+/* cartas patrocinadores */
+.card {
+  height: 400px !important;
+  /* min-width: 200px !important;
+  max-width: 600px !important; */
+  max-width: 500px !important;
+
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.card-text {
+  max-height: 200px !important;
+  overflow-y: scroll;
+}
+
+.contenedor-colaboradores {
+  margin: 3rem 2rem;
+  height: 400px;
+  /* background: red; */
+
+  display: flex;
+  flex-flow: row;
+  gap: 3rem;
+}
+
+.carousel,
+.carousel-inner {
+  max-height: 400px !important;
 }

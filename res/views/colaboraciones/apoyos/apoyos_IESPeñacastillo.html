@@ -10,20 +10,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-  <style>
-    .carousel {
-      min-height: 400px !important;
-    }
 
-    .card {
-      min-height: 400px !important;
-
-      min-width: 200px !important;
-      /* width: 400px !important; */
-      max-width: 600px !important;
-
-    }
-  </style>
 </head>
 
 <body>
@@ -196,8 +183,9 @@
   </header>
 
   <main class="principal">
-    <div class=" mt-4 mb-4 px-3 d-flex flex-row  justify-content-center align-items-center gap-5">
-      <div class="mb-2">
+    <div class="contenedor-colaboradores d-flex flex-row  justify-content-center align-items-center">
+
+      <div class="">
         <div class="card">
           <!-- imagen -->
           <img style="width: 100px;" src="../../../img/logos/logo_peñacastillo.jpg" alt="Logo Peñacastillo">
@@ -205,7 +193,7 @@
             <!-- titulo -->
             <h5 class="card-title"><strong>IES Peñacastillo</strong></h5>
             <!-- descripcion -->
-            <p class="card-text">
+            <p class="card-text ">
               l instituto IES Peñacastillo, ayudará y por lo tanto colaborará con su Ciclo Formativo de Grado Superior
               de Cocina y Gastronomía, que nos proporcionarán comida y bebidas saludables que se venderán con la
               finalidad de conseguir dinero que será donado para la ONG.
@@ -214,52 +202,54 @@
         </div>
       </div>
 
-
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <!-- Agregar un boton nuevo por cada imagen nueva, aumentar los contadores de 'data-bs-slide-to' y 'aria-label' -->
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-            aria-label="Slide 5"></button>
+      <div class="contenedor-colaboradores-carusel">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <!-- Agregar un boton nuevo por cada imagen nueva, aumentar los contadores de 'data-bs-slide-to' y 'aria-label' -->
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- Imagen inicial -->
+            <div class="carousel-item active">
+              <img src="../../../img/empresas/penacastillo/ies peñacastillo 1.jpg" class="d-block w-100" alt="Imagen1">
+            </div>
+            <!-- Agregar las imagenes que hagan falta copiando este div y modificando el src del img -->
+            <div class="carousel-item">
+              <img src="../../../img/empresas/penacastillo/ies peñacastillo 2.jpg" class="d-block w-100" alt="Imagen2">
+            </div>
+            <div class="carousel-item">
+              <img src="../../../img/empresas/penacastillo/ies peñacastillo 3.jpg" class="d-block w-100" alt="Imagen3">
+            </div>
+            <div class="carousel-item">
+              <img src="../../../img/empresas/penacastillo/ies peñacastillo 4.jpg" class="d-block w-100" alt="Imagen4">
+            </div>
+            <div class="carousel-item">
+              <img src="../../../img/empresas/penacastillo/ies peñacastillo 5.jpg" class="d-block w-100" alt="Imagen5">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <!-- Imagen inicial -->
-          <div class="carousel-item active">
-            <img src="../../../img/empresas/penacastillo/ies peñacastillo 1.jpg" class="d-block w-100" alt="Imagen1">
-          </div>
-          <!-- Agregar las imagenes que hagan falta copiando este div y modificando el src del img -->
-          <div class="carousel-item">
-            <img src="../../../img/empresas/penacastillo/ies peñacastillo 2.jpg" class="d-block w-100" alt="Imagen2">
-          </div>
-          <div class="carousel-item">
-            <img src="../../../img/empresas/penacastillo/ies peñacastillo 3.jpg" class="d-block w-100" alt="Imagen3">
-          </div>
-          <div class="carousel-item">
-            <img src="../../../img/empresas/penacastillo/ies peñacastillo 4.jpg" class="d-block w-100" alt="Imagen4">
-          </div>
-          <div class="carousel-item">
-            <img src="../../../img/empresas/penacastillo/ies peñacastillo 5.jpg" class="d-block w-100" alt="Imagen5">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
       </div>
     </div>
+
   </main>
 
   <footer class="d-flex flex-column pt-3">
