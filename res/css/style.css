@@ -70,7 +70,7 @@ main {
   /* padding: 0px 5%; */
 }
 
-main > * {
+main>* {
   margin: auto;
 }
 
@@ -423,15 +423,75 @@ footer .segunda img {
 }
 
 /* Lista de equipos */
-.listado-equipos{
+.listado-equipos {
   justify-content: space-evenly;
 }
 
-.equipo-card{
+.equipo-card {
   height: fit-content !important;
   text-align: center;
 }
 
-.equipo-card img{
+.equipo-card img {
   max-width: 80% !important;
+}
+
+/* Listado de jugadores */
+.listado-jugadores {
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-equipo{
+  margin: 50px auto;
+}
+
+.tarjeta-equipo .card-body{
+  background-color: var(--cup-secondary);
+  color: var(--cup-white);
+  border-radius: 25px;
+}
+
+.entrenador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.entrenador img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.jugadores{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.jugadores img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.jugador{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.jugador p, .entrenador h1{
+  margin: 0;
+  padding: 10px 10px 10px 25px;
+  background-color: var(--cup-secondary);
+  color: var(--cup-white);
+  border-radius: 0 25px 25px 0;
+  position: relative;
+  right: 20px;
 }
