@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Torneo Solidario</title>
-    <!-- <link rel="stylesheet" href="./res/css/style.css"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torneo Solidario</title>
+  <!-- <link rel="stylesheet" href="./res/css/style.css"> -->
   <link rel="stylesheet" href="../../css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
-      main {
-          padding: 30px;
-          background-color: #f8f9fa; /* Fondo gris claro */
-          border-radius: 10px;
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-          margin-top: 20px;
-          color: #495057; /* Color del texto */
-      }
+  <style>
+    main {
+      padding: 30px;
+      background-color: #f8f9fa;
+      /* Fondo gris claro */
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      color: #495057;
+      /* Color del texto */
+    }
 
-      h1 {
-          font-size: 2.5em;
-          margin-bottom: 20px;
-          color: #343a40; /* Color del título */
-      }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #343a40;
+      /* Color del título */
+    }
 
-      p {
-          font-size: 1.2em;
-          line-height: 1.6;
-          margin-bottom: 15px;
-      }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
 
-      img {
-          max-width: 100%;
-          height: auto;
-          border-radius: 8px;
-          margin-top: 15px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
 
-      h3 {
-          font-size: 1.8em;
-          margin-top: 20px;
-          color: #343a40; /* Color del subtítulo */
-      }
+    h3 {
+      font-size: 1.8em;
+      margin-top: 20px;
+      color: #343a40;
+      /* Color del subtítulo */
+    }
   </style>
 </head>
+
 <body>
   <header class="d-flex justify-content-between">
     <nav class="navbar navbar-expand-xl d-flex flex-row pb-0">
       <!-- Logo de la izquierda -->
       <div class="contenedor1 me-5 d-flex align-items-center gap-3 flex-row">
         <div class="d-flex flex-row flex align-items-center gap-3 ms-4">
-          <img src="../../img/logos/logoleon.png" alt="Mini Logo" class="logo-nav">
+          <img src="./res/img/logos/logoleon.png" alt="Mini Logo" class="logo-nav">
           <a class="navbar-brand" href="./index-bootstrap.html">IES Augusto Cup</a>
         </div>
 
@@ -72,17 +78,8 @@
             </li>
 
             <!-- Lista de equipos -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Equipos
-              </a>
-              <!-- Elementos del sub menu -->
-              <ul class="dropdown-menu bg-dark">
-                <li><a class="dropdown-item" href="#">Equipo 1</a></li>
-                <li><a class="dropdown-item" href="#">Equipo 2</a></li>
-
-                <!-- Agregar equipos a conveniencia -->
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link activo" aria-current="page" href="#">Equipos</a>
             </li>
 
             <!-- Lista de Organizacion -->
@@ -92,8 +89,9 @@
               </a>
               <!-- Elementos del sub menu -->
               <ul class="dropdown-menu  bg-dark">
-                <li><a class="dropdown-item" href="#">Comisión de organización</a></li>
-                <li><a class="dropdown-item" href="#">Retos</a></li>
+                <li><a class="dropdown-item" href="res/views/organizacion/comisionorganizacion.html">Comisión de
+                    organización</a></li>
+                <li><a class="dropdown-item" href="res/views/organizacion/retos.html">Retos</a></li>
 
               </ul>
             </li>
@@ -104,15 +102,19 @@
               </a>
               <!-- Elementos del sub menu -->
               <ul class="dropdown-menu  bg-dark">
-                <li><a class="dropdown-item" href="#">Torneo solidario</a></li>
+                <li><a class="dropdown-item" href="res/views/torneo/torneosolidario.html">Torneo solidario</a></li>
 
                 <li class="dropstart">
                   <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Torneo deportivo</a>
                   <ul class="dropdown-menu  bg-dark">
-                    <li><a class="dropdown-item" href="#">Sistema de competición</a></li>
-                    <li><a class="dropdown-item" href="#">Clasificación</a></li>
-                    <li><a class="dropdown-item" href="#">Resultados</a></li>
-                    <li><a class="dropdown-item" href="#">Galería</a></li>
+                    <li><a class="dropdown-item"
+                        href="res/views/torneo/torneo-deportivo/sistemacompeticion.html">Sistema de competición</a></li>
+                    <li><a class="dropdown-item"
+                        href="res/views/torneo/torneo-deportivo/clasificacion.html">Clasificación</a></li>
+                    <li><a class="dropdown-item" href="res/views/torneo/torneo-deportivo/resultados.html">Resultados</a>
+                    </li>
+                    <li><a class="dropdown-item" href="res/views/torneo/torneo-deportivo/galeriaImg.html">Galería</a>
+                    </li>
                   </ul>
                 </li>
                 <!-- Lista de Objetivos-->
@@ -126,109 +128,194 @@
               </a>
               <!-- Elementos del sub menu -->
               <ul class="dropdown-menu bg-dark">
-                <li><a class="dropdown-item" href="#">Generales</a></li>
+                <li><a class="dropdown-item" href="res/views/objetivos/objetivosGenerales.html">Generales</a></li>
                 <li><a class="dropdown-item" href="#">ODS</a></li>
 
                 <!-- Agregar equipos a conveniencia -->
               </ul>
             </li>
-            <!-- Lista de Organizacion -->
+            <!--!  -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-auto-close="outside"
+                data-bs-toggle="dropdown" aria-expanded="false">Colaboraciones
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu  bg-dark">
+                <li class="dropstart">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Apoyos al proyecto</a>
+                  <ul class="dropdown-menu  bg-dark">
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/apoyos/apoyos_IESPeñacastillo.html">IES
+                        Peñacastillo</a></li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/apoyos/apoyos_IESAGL.html">IES AGL</a>
+                    </li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/apoyos/apoyos_asociacionNV.html">Nueva
+                        Vida</a></li>
+                  </ul>
+                </li>
+                <li class="dropstart">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Patrocinadores</a>
+                  <ul class="dropdown-menu  bg-dark">
+                    <li><a class="dropdown-item"
+                        href="res/views/colaboraciones/patrocinadores/cantabriaInformatica.html">Cantabria
+                        Informatica</a></li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/cic.html">CIC</a></li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/deode.html">DEODE</a>
+                    </li>
+                    <li><a class="dropdown-item"
+                        href="res/views/colaboraciones/patrocinadores/fondoseuropeos.html">Fondos Europeos</a></li>
+                    <li><a class="dropdown-item"
+                        href="res/views/colaboraciones/patrocinadores/infortec.html">Infortec</a></li>
+                    <li><a class="dropdown-item" href="#">Ministerio</a></li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/apoyos/apoyos_asociacionNV.html">Nueva
+                        Vida</a></li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/seidor.html">Seidor</a>
+                    </li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/siali.html">Siali</a>
+                    </li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/seidor.html">SEIDOR</a>
+                    </li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/soincon.html">SOINCON</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Lista de Objetivos-->
+                <!-- Elementos del sub menu -->
+              </ul>
+            </li>
+            <!--!  -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Colaboraciones
+                aria-expanded="false">Contacto
               </a>
               <!-- Elementos del sub menu -->
               <ul class="dropdown-menu bg-dark">
-                <li><a class="dropdown-item" href="#">Apoyos al proyecto</a></li>
-                <li><a class="dropdown-item" href="#">Patrocinadores</a></li>
+                <li><a class="dropdown-item" href="res/views/contacto/ubicacion.html">Ubicación</a></li>
+                <li><a class="dropdown-item" href="res/views/contacto/formulario.html">Formulario de contacto</a></li>
+                <li><a class="dropdown-item" href="res/views/contacto/donaciones.html">Donación</a></li>
 
                 <!-- Agregar equipos a conveniencia -->
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#">Contacto</a>
+              <a class="nav-link " aria-current="page" href="res/views/f&q.html">F&Q</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#">F&Q</a>
-            </li>
+
           </ul>
+
+          <!-- Redes  -->
+          <div class=" redes align-self-center">
+            <a href="https://www.instagram.com/ies_augusto_cup/" class="me-4"><img src="./res/img/iconos/instagram.png"
+                alt="Instagram" class="iconos-redes"></a>
+          </div>
+
         </div>
 
       </div>
     </nav>
 
   </header>
-      <main>
-        <div>
-            <h1>TORNEO SOLIDARIO</h1>
+  <main>
+    <div>
+      <h1>TORNEO SOLIDARIO</h1>
+    </div>
+    <div>
+      <p>Para alcanzar una de las metas del ODS hambre cero este proyecto buscará recoger la mayor cantidad de alimentos
+        y recursos económicos posibles. La ONG Nueva Vida gestionará tanto los alimentos no perecederos recogidos como
+        los recursos económicos generados, para que lleguen a las realidades sociales que más lo necesitan y trabajarán
+        con el alumnado la concienciación y la sensibilización.​</p>
+    </div>
+    <div>
+      <img src="../../img/fotografias/celebracion/imgLevantandoManos.jpeg" alt="imgEjemplo1">
+    </div>
+    <div>
+      <h3>RECOGIDA DE ALIMENTOS:</h3>
+      <p>Se “disputará” el Torneo Solidario, de manera paralela a la celebración del Torneo Deportivo. Los mismos
+        equipos que participan en el Torneo Deportivo tratarán de convertirse en el equipo campeón del Torneo Solidario.
+        Para conseguirlo, deberán ser capaces de recaudar la mayor cantidad de alimentos posibles. Pero no solamente a
+        través de los que los componentes del equipo donen si no que sus compañeros de clase, sus amistades y sus
+        familiares podrán también colaborar con su equipo para alzarse con el trofeo al equipo campeón del Torneo
+        Solidario. Este trofeo será entregado por las autoridades invitadas a presenciar el evento.</p>
+    </div>
+    <div>
+      <img src="../../img/fotografias/celebracion/imgLevantandoManos.jpeg" alt="imgEjemplo2">
+    </div>
+    <div>
+      <h3>PATROCINIOS:</h3>
+      <p>
+        Por otra parte, a cada uno de los diez equipos participantes se les asignará un patrocinador. El patrocinador
+        asignado a cada equipo se decidirá por sorteo. Las condiciones para que una empresa del entorno del IES Augusto
+        González de Linares pueda convertirse en patrocinador de uno de estos equipos son las siguientes:
+        - Donarán alimentos no perecederos por un valor mínimo de 100€.
+        - Se comprometerán a que la Comisión organizadora pueda entregar folletos y carteles para la concienciación y
+        sensibilización diseñados por los alumnos de Aplicaciones fimáticas en su reto “Organización técnica de un
+        evento deportivo”.
+        - Se comprometerán a que la Comisión organizadora del evento coloque en sus dependencias una caja para que los
+        empleados puedan colaborar donando sus alimentos.
+      </p>
+    </div>
+    <div>
+      <img src="../../img/fotografias/celebracion/imgCelebracion1.jpeg" alt="imgEjemplo3">
+    </div>
+    <div>
+      <h3>RECAUDACIÓN DE FONDOS ECONÓMICOS</h3>
+      <p>
+        Durante la fase final se venderán agua, bebidas isotónicas y alimentos
+        saludables preparados por los alumnos del Ciclo Formativo de Cocina del IES
+        Peñacastillo.
+        Tras la celebración de la IES Augusto Cup, se realizará una exposición con las
+        fotografías de los mejores momentos del torneo. Al finalizar la exposición, se
+        venderán a los interesados en adquirirlas.
+      </p>
+    </div>
+  </main>
+  <footer class="d-flex flex-column pt-3">
+    <div class="d-flex flex-column justify-content-around pb-4 gap-3">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <p>Patrocinadores</p>
+        <!-- Agregar colaboradores a conveniencia -->
+        <div class="d-flex flex-column patrocinadores2 gap-3">
+          <div class="d-flex flex-row gap-5 justify-content-center">
+            <!-- TODO: cambiar ruta -->
+            <a href="#"><img src="../../img/logos/Logo_Deode.png" alt="Deode"></a>
+            <!-- TODO: cambiar ruta -->
+            <a href="#"><img src="../../img/logos/LOGO_COLOR_Seidor.png" alt="Seidor"></a>
+            <!-- TODO: cambiar ruta -->
+            <a href="#"><img src="../../img/logos/cit.png" alt="Cit"></a>
+            <!-- TODO: cambiar ruta -->
+            <a href="#"><img src="../../img/logos/Infortec.png" alt="Infortec"></a>
+          </div>
+          <div class="d-flex flex-row gap-5 justify-content-center">
+            <a href="#"><img id="siali" src="../../img/logos/Siali_tech.png" alt="Siali"></a>
+            <a href="#"><img src="../../img/logos/Soincon.png" alt="Soincon"></a>
+            <a
+              href="https://www.hacienda.gob.es/es-ES/Areas%20Tematicas/Fondos%20de%20la%20Union%20Europea/Paginas/default.aspx"><img
+                src="../../img/logos/fondos-europeos.png" alt="Fondos Europeos"></a>
+            <a href="#"><img src="../../img/logos/Nueva Vida.png" alt="Nueva Vida"></a>
+          </div>
         </div>
-        <div>
-            <p>Para alcanzar una de las metas del ODS hambre cero este proyecto buscará recoger la mayor cantidad de alimentos y recursos económicos posibles. La ONG Nueva Vida gestionará tanto los alimentos no perecederos recogidos como los recursos económicos generados, para que lleguen a las realidades sociales que más lo necesitan y trabajarán con el alumnado la concienciación y la sensibilización.​</p>
+      </div>
+      <!-- lo otro -->
+      <div class=" text-center">
+        <p>Apoyos al Proyecto</p>
+        <div class="d-flex flex-row gap-5 apoyos justify-content-center">
+          <a href="https://www.cantabria.es/"><img class="img-apoyo" src="../../img/logos/Gobierno_de_Cantabria.png"
+              alt="Gobierno de Cantabria"></a>
+          <a href="https://www.educacionyfp.gob.es/portada.html"><img class="img-apoyo"
+              src="../../img/logos/Ministerio de Educación y Formación Profesional.png"
+              alt="Ministerio de Educación y Formación Profesional"></a>
+          <a href="#"><img class="img-apoyo" src="../../img/logos/IES_AUG.png" alt="IES AUG"></a>
         </div>
-        <div>
-            <img src="../../img/fotografias/celebracion/imgLevantandoManos.jpeg" alt="imgEjemplo1">
-        </div>
-        <div>
-            <h3>RECOGIDA DE ALIMENTOS:</h3>
-            <p>Se “disputará” el Torneo Solidario, de manera paralela a la celebración del Torneo Deportivo. Los mismos equipos que participan en el Torneo Deportivo tratarán de convertirse en el equipo campeón del Torneo Solidario. Para conseguirlo, deberán ser capaces de recaudar la mayor cantidad de alimentos posibles. Pero no solamente a través de los que los componentes del equipo donen si no que sus compañeros de clase, sus amistades y sus familiares podrán también colaborar con su equipo para alzarse con el trofeo al equipo campeón del Torneo Solidario. Este trofeo será entregado por las autoridades invitadas a presenciar el evento.</p>
-        </div>
-        <div>
-            <img src="../../img/fotografias/celebracion/imgLevantandoManos.jpeg" alt="imgEjemplo2">
-        </div>
-        <div>
-            <h3>PATROCINIOS:</h3>
-            <p>
-                Por otra parte, a cada uno de los diez equipos participantes se les asignará un patrocinador. El patrocinador asignado a cada equipo se decidirá por sorteo. Las condiciones para que una empresa del entorno del IES Augusto González de Linares pueda convertirse en patrocinador de uno de estos equipos son las siguientes:
-                - Donarán alimentos no perecederos por un valor mínimo de 100€.
-                - Se comprometerán a que la Comisión organizadora pueda entregar folletos y carteles para la concienciación y sensibilización diseñados por los alumnos de Aplicaciones  fimáticas en su reto “Organización técnica de un evento deportivo”.
-                - Se comprometerán a que la Comisión organizadora del evento coloque en sus dependencias una caja para que los empleados puedan colaborar donando sus alimentos.
-            </p>
-        </div>
-        <div>
-            <img src="../../img/fotografias/celebracion/imgCelebracion1.jpeg" alt="imgEjemplo3">
-        </div>
-        <div>
-            <h3>RECAUDACIÓN DE FONDOS ECONÓMICOS</h3>
-            <p>
-                Durante la fase final se venderán agua, bebidas isotónicas y alimentos
-                saludables preparados por los alumnos del Ciclo Formativo de Cocina del IES
-                Peñacastillo.
-                Tras la celebración de la IES Augusto Cup, se realizará una exposición con las
-                fotografías de los mejores momentos del torneo. Al finalizar la exposición, se
-                venderán a los interesados en adquirirlas.
-            </p>
-        </div>
-      </main>
-      <footer class="container text-center">
+      </div>
+    </div>
 
-        <div class="row">
-          <div class="col">
-            <img src="img/Gobierno de Cantabria.png" alt="Gobierno de Cantabria">
-          </div>
-          <div class="col">
-            <img src="img/Ministerio de Educación y Formación Profesional.png" alt="Ministerio de Educación y Formación Profesional">
-          </div>
-          <div class="col">
-            <img src="img/Fondos Europeos.png" alt="Fondos Europeos">
-          </div>
-        </div>
-    
-        <div class="row">
-          <div class="col"> 
-            <img src="img/Cofinanciado por la Unión Europea.png" alt="Cofinanciado por la Unión Europea">
-    
-          </div>
-          <div class="col">
-            <img src="img/cit.gif" alt="Cit">
-          </div>
-          <div class="col">
-            <img src="img/LOGO_COLOR_Seidor.png" alt="Seidor">
-          </div>
-          <div class="col">
-            <img src="img/Nueva Vida.png" alt="Nueva Vida">
-          </div>
-        </div>
-    
-      </footer>
+
+    <!-- RSS -->
+    <div class="row text-center cosas">
+      <p>2023 IES AUG - retoaglcup@gmail.com - <a href="#">Aviso Legal</a> - <a
+          href="http://localhost/Cup2024/reto-cup2024/noticia_torneo.xml"><img
+            src="../../img/logos/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" /></a></p>
+    </div>
+  </footer>
 </body>
+
 </html>
