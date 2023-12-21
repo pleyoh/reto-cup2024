@@ -307,6 +307,8 @@ footer .segunda img {
 }
 
 .carousel-inner {
+  min-width: 300px !important;
+
   max-width: 800px !important;
 
   max-height: 500px !important;
