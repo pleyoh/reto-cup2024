@@ -357,8 +357,8 @@ footer .segunda img {
 }
 
 .card-text {
-  max-height: 200px !important;
-  overflow-y: scroll;
+  max-height: 220px !important;
+  overflow-y: auto;
 }
 
 .contenedor-colaboradores {
