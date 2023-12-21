@@ -183,30 +183,28 @@
 
 
   <!-- Formulario de Bootstrap -->
-  <main class="mb-5">
-    <div class="container mt-5">
+  <main class="">
+    <div class="container mt-2 mb-2">
       <form action="../../../recibirFormulario.php" method="post">
         <div class="form-row">
-          <div class="form-group col-md-4">
-            <label for="nombre">Nombre y apellidos:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
+          <div class="form-group col-md-4 my-3">
+            <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Nombre y apellidos">
           </div>
-          <div class="form-group col-md-4">
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" class="form-control" id="correo" name="correo" required>
+          <div class="form-group col-md-4  my-3">
+            <input type="email" class="form-control" id="correo" name="correo" required
+              placeholder="Correo Electrónico">
           </div>
-          <div class="form-group col-md-4">
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" class="form-control" id="telefono" name="telefono" required>
+          <div class="form-group col-md-4  my-3">
+
+            <input type="tel" class="form-control" id="telefono" name="telefono" required placeholder="Teléfono">
           </div>
-          <div class="form-group col-md-4">
-            <label for="mensaje">Mensaje:</label>
-            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Comentarios aquí"
+          <div class="form-group col-md-4  mt-3">
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Comentarios aquí..."
               style="resize: none;"></textarea>
           </div>
         </div>
 
-        <input type="submit" class="btn btn-primary" value="Enviar" name="enviar">
+        <input type="submit" class="btn btn-enviar" value="Enviar" name="enviar">
       </form>
     </div>
   </main>
