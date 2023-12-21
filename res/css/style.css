@@ -70,7 +70,7 @@ main {
   /* padding: 0px 5%; */
 }
 
-main>* {
+main > * {
   margin: auto;
 }
 
@@ -229,7 +229,6 @@ footer .segunda img {
   align-items: end !important;
   padding: 0 !important;
   cursor: pointer;
-  max-height: 500px;
 }
 
 .portada .negrura {
@@ -442,7 +441,6 @@ footer .segunda img {
   justify-content: space-evenly;
 }
 
-
 .equipo-card {
   height: fit-content !important;
   text-align: center;
@@ -452,7 +450,6 @@ footer .segunda img {
   text-decoration: none;
   color: var(--cup-white);
 }
-
 
 .equipo-card img {
   max-width: 80% !important;
