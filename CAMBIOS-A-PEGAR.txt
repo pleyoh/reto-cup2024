@@ -14,8 +14,7 @@
 
 
 ////////////////////////////// header ///////////////////////////////////////
-TODO: cambiar el activo
-   <header class="d-flex justify-content-between">
+  <header class="d-flex justify-content-between">
     <nav class="navbar navbar-expand-xl d-flex flex-row pb-0">
       <!-- Logo de la izquierda -->
       <div class="contenedor1 me-5 d-flex align-items-center gap-3 flex-row">
@@ -41,17 +40,8 @@ TODO: cambiar el activo
             </li>
 
             <!-- Lista de equipos -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Equipos
-              </a>
-              <!-- Elementos del sub menu -->
-              <ul class="dropdown-menu bg-dark">
-                <li><a class="dropdown-item" href="res/views/equipos/equipo1.html">Equipo 1</a></li>
-                <li><a class="dropdown-item" href="res/views/equipos/equipoX.html">Equipo 2</a></li>
-
-                <!-- Agregar equipos a conveniencia -->
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link activo" aria-current="page" href="#">Equipos</a>
             </li>
 
             <!-- Lista de Organizacion -->
