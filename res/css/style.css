@@ -173,6 +173,10 @@ header nav p {
   color: var(--cup-body-bg) !important;
 }
 
+.iconos-redes{
+  width: 30px;
+}
+
 .logo-nav {
   width: 50px;
 }
