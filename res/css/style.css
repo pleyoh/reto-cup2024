@@ -363,8 +363,8 @@ footer .segunda img {
   gap: 3rem;
 }
 
-.carousel,
-.carousel-inner {
+.contenedor-colaboradores-carusel .carousel,
+.contenedor-colaboradores-carusel .carousel-inner {
   max-height: 400px !important;
 }
 /* Pagina de la ODS */
