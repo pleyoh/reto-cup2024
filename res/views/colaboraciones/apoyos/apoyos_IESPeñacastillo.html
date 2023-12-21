@@ -9,6 +9,21 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <style>
+    .carousel {
+      min-height: 400px !important;
+    }
+
+    .card {
+      min-height: 400px !important;
+
+      min-width: 200px !important;
+      /* width: 400px !important; */
+      max-width: 600px !important;
+
+    }
+  </style>
 </head>
 
 <body>
@@ -17,8 +32,11 @@
       <!-- Logo de la izquierda -->
       <div class="contenedor1 me-5 d-flex align-items-center gap-3 flex-row">
         <div class="d-flex flex-row flex align-items-center gap-3 ms-4">
+          <!-- TODO: cambiar ruta -->
           <img src="../../../img/logos/logoleon.png" alt="Mini Logo" class="logo-nav">
-          <a class="navbar-brand" href="./index-bootstrap.html">IES Augusto Cup</a>
+
+          <!-- TODO: cambiar ruta -->
+          <a class="navbar-brand" href="../../../../index.html">IES Augusto Cup</a>
         </div>
 
         <!-- Boton del desplegable -->
@@ -34,7 +52,8 @@
         <div class="collapse navbar-collapse ms-3" id="navbarNav">
           <ul class="navbar-nav ">
             <li class="nav-item">
-              <a class="nav-link activo" aria-current="page" href="#">Inicio</a>
+              <!-- TODO: cambiar ruta -->
+              <a class="nav-link " aria-current="page" href="../../../../index.html">Inicio</a>
             </li>
 
             <!-- Lista de equipos -->
@@ -44,8 +63,8 @@
               </a>
               <!-- Elementos del sub menu -->
               <ul class="dropdown-menu bg-dark">
-                <li><a class="dropdown-item" href="#">Equipo 1</a></li>
-                <li><a class="dropdown-item" href="#">Equipo 2</a></li>
+                <li><a class="dropdown-item" href="res/views/equipos/equipo1.html">Equipo 1</a></li>
+                <li><a class="dropdown-item" href="res/views/equipos/equipoX.html">Equipo 2</a></li>
 
                 <!-- Agregar equipos a conveniencia -->
               </ul>
@@ -58,8 +77,9 @@
               </a>
               <!-- Elementos del sub menu -->
               <ul class="dropdown-menu  bg-dark">
-                <li><a class="dropdown-item" href="#">Comisión de organización</a></li>
-                <li><a class="dropdown-item" href="#">Retos</a></li>
+                <li><a class="dropdown-item" href="res/views/organizacion/comisionorganizacion.html">Comisión de
+                    organización</a></li>
+                <li><a class="dropdown-item" href="res/views/organizacion/retos.html">Retos</a></li>
 
               </ul>
             </li>
@@ -70,15 +90,19 @@
               </a>
               <!-- Elementos del sub menu -->
               <ul class="dropdown-menu  bg-dark">
-                <li><a class="dropdown-item" href="#">Torneo solidario</a></li>
+                <li><a class="dropdown-item" href="res/views/torneo/torneosolidario.html">Torneo solidario</a></li>
 
                 <li class="dropstart">
                   <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Torneo deportivo</a>
                   <ul class="dropdown-menu  bg-dark">
-                    <li><a class="dropdown-item" href="#">Sistema de competición</a></li>
-                    <li><a class="dropdown-item" href="#">Clasificación</a></li>
-                    <li><a class="dropdown-item" href="#">Resultados</a></li>
-                    <li><a class="dropdown-item" href="#">Galería</a></li>
+                    <li><a class="dropdown-item"
+                        href="res/views/torneo/torneo-deportivo/sistemacompeticion.html">Sistema de competición</a></li>
+                    <li><a class="dropdown-item"
+                        href="res/views/torneo/torneo-deportivo/clasificacion.html">Clasificación</a></li>
+                    <li><a class="dropdown-item" href="res/views/torneo/torneo-deportivo/resultados.html">Resultados</a>
+                    </li>
+                    <li><a class="dropdown-item" href="res/views/torneo/torneo-deportivo/galeriaImg.html">Galería</a>
+                    </li>
                   </ul>
                 </li>
                 <!-- Lista de Objetivos-->
@@ -92,30 +116,76 @@
               </a>
               <!-- Elementos del sub menu -->
               <ul class="dropdown-menu bg-dark">
-                <li><a class="dropdown-item" href="#">Generales</a></li>
+                <li><a class="dropdown-item" href="res/views/objetivos/objetivosGenerales.html">Generales</a></li>
                 <li><a class="dropdown-item" href="#">ODS</a></li>
 
                 <!-- Agregar equipos a conveniencia -->
               </ul>
             </li>
-            <!-- Lista de Organizacion -->
+            <!--!  -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Colaboraciones
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-auto-close="outside"
+                data-bs-toggle="dropdown" aria-expanded="false">Colaboraciones
+              </a>
+              <!-- Elementos del sub menu -->
+              <ul class="dropdown-menu  bg-dark">
+                <li class="dropstart">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Apoyos al proyecto</a>
+                  <ul class="dropdown-menu  bg-dark">
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/apoyos/apoyos_IESPeñacastillo.html">IES
+                        Peñacastillo</a></li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/apoyos/apoyos_IESAGL.html">IES AGL</a>
+                    </li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/apoyos/apoyos_asociacionNV.html">Nueva
+                        Vida</a></li>
+                  </ul>
+                </li>
+                <li class="dropstart">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Patrocinadores</a>
+                  <ul class="dropdown-menu  bg-dark">
+                    <li><a class="dropdown-item"
+                        href="res/views/colaboraciones/patrocinadores/cantabriaInformatica.html">Cantabria
+                        Informatica</a></li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/cic.html">CIC</a></li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/deode.html">DEODE</a>
+                    </li>
+                    <li><a class="dropdown-item"
+                        href="res/views/colaboraciones/patrocinadores/fondoseuropeos.html">Fondos Europeos</a></li>
+                    <li><a class="dropdown-item"
+                        href="res/views/colaboraciones/patrocinadores/infortec.html">Infortec</a></li>
+                    <li><a class="dropdown-item" href="#">Ministerio</a></li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/apoyos/apoyos_asociacionNV.html">Nueva
+                        Vida</a></li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/seidor.html">Seidor</a>
+                    </li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/siali.html">Siali</a>
+                    </li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/seidor.html">SEIDOR</a>
+                    </li>
+                    <li><a class="dropdown-item" href="res/views/colaboraciones/patrocinadores/soincon.html">SOINCON</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Lista de Objetivos-->
+                <!-- Elementos del sub menu -->
+              </ul>
+            </li>
+            <!--!  -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle activo" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Contacto
               </a>
               <!-- Elementos del sub menu -->
               <ul class="dropdown-menu bg-dark">
-                <li><a class="dropdown-item" href="#">Apoyos al proyecto</a></li>
-                <li><a class="dropdown-item" href="#">Patrocinadores</a></li>
+                <li><a class="dropdown-item activo" href="res/views/contacto/ubicacion.html">Ubicación</a></li>
+                <li><a class="dropdown-item" href="res/views/contacto/formulario.html">Formulario de contacto</a></li>
+                <li><a class="dropdown-item" href="res/views/contacto/donaciones.html">Donación</a></li>
 
                 <!-- Agregar equipos a conveniencia -->
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#">F&Q</a>
+              <a class="nav-link " aria-current="page" href="res/views/f&q.html">F&Q</a>
             </li>
           </ul>
         </div>
@@ -126,11 +196,11 @@
   </header>
 
   <main class="principal">
-    <div class="row mt-4">
-      <div class="col">
+    <div class=" mt-4 mb-4 px-3 d-flex flex-row  justify-content-center align-items-center gap-5">
+      <div class="mb-2">
         <div class="card">
           <!-- imagen -->
-          <img src="../../../img/logos/logo_peñacastillo.jpg" alt="Logo Peñacastillo">
+          <img style="width: 100px;" src="../../../img/logos/logo_peñacastillo.jpg" alt="Logo Peñacastillo">
           <div class="card-body">
             <!-- titulo -->
             <h5 class="card-title"><strong>IES Peñacastillo</strong></h5>
@@ -144,104 +214,101 @@
         </div>
       </div>
 
-      <div class="col-6 carrusel align-self-center">
-        <!-- Deslizador de imagenes -->
-        <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-indicators">
-            <!-- Agregar un boton nuevo por cada imagen nueva, aumentar los contadores de 'data-bs-slide-to' y 'aria-label' -->
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-              aria-label="Slide 5"></button>
-          </div>
-          <div class="carousel-inner">
-            <!-- Imagen inicial -->
-            <div class="carousel-item active">
-              <img src="../../../img/empresas/penacastillo/ies peñacastillo 1.jpg" class="d-block w-100"
-                alt="Peñacastillo">
-            </div>
-            <!-- Agregar las imagenes que hagan falta copiando este div y modificando el src del img -->
-            <div class="carousel-item">
-              <img src="../../../img/empresas/penacastillo/ies peñacastillo 2.jpg" class="d-block w-100"
-                alt="Peñacastillo">
-            </div>
-            <div class="carousel-item">
-              <img src="../../../img/empresas/penacastillo/ies peñacastillo 3.jpg" class="d-block w-100"
-                alt="Peñacastillo">
-            </div>
-            <div class="carousel-item">
-              <img src="../../../img/empresas/penacastillo/ies peñacastillo 4.jpg" class="d-block w-100"
-                alt="Peñacastillo">
-            </div>
-            <div class="carousel-item">
-              <img src="../../../img/empresas/penacastillo/ies peñacastillo 5.jpg" class="d-block w-100"
-                alt="Peñacastillo">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <!-- Agregar un boton nuevo por cada imagen nueva, aumentar los contadores de 'data-bs-slide-to' y 'aria-label' -->
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
         </div>
+        <div class="carousel-inner">
+          <!-- Imagen inicial -->
+          <div class="carousel-item active">
+            <img src="../../../img/empresas/penacastillo/ies peñacastillo 1.jpg" class="d-block w-100" alt="Imagen1">
+          </div>
+          <!-- Agregar las imagenes que hagan falta copiando este div y modificando el src del img -->
+          <div class="carousel-item">
+            <img src="../../../img/empresas/penacastillo/ies peñacastillo 2.jpg" class="d-block w-100" alt="Imagen2">
+          </div>
+          <div class="carousel-item">
+            <img src="../../../img/empresas/penacastillo/ies peñacastillo 3.jpg" class="d-block w-100" alt="Imagen3">
+          </div>
+          <div class="carousel-item">
+            <img src="../../../img/empresas/penacastillo/ies peñacastillo 4.jpg" class="d-block w-100" alt="Imagen4">
+          </div>
+          <div class="carousel-item">
+            <img src="../../../img/empresas/penacastillo/ies peñacastillo 5.jpg" class="d-block w-100" alt="Imagen5">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
-
-
-
     </div>
   </main>
 
-  <footer class="bg-body-tertiary mt-4">
-
-    <div class="row primera text-center mt-4 mb-4">
-      <div class="col">
+  <footer class="d-flex flex-column pt-3">
+    <div class="d-flex flex-column justify-content-around pb-4 gap-3">
+      <div class="d-flex flex-column justify-content-center align-items-center">
         <p>Patrocinadores</p>
         <!-- Agregar colaboradores a conveniencia -->
-        <a href="#"><img src="../../../img/logos/Logo_Deode.png" alt="Deode"></a>
-        <a href="#"><img src="../../../img/logos/LOGO_COLOR_Seidor.png" alt="Seidor"></a>
-        <a href="#"><img src="../../../img/logos/cit.png" alt="Cit"></a>
-        <a href="#"><img src="../../../img/logos/Infortec.png" alt="Infortec"></a>
-        <a href="#"><img id="siali" src="../../../img/logos/Siali_tech.png" alt="Siali"></a>
-        <a href="#"><img src="../../../img/logos/Soincon.png" alt="Soincon"></a>
-        <a
-          href="https://www.hacienda.gob.es/es-ES/Areas%20Tematicas/Fondos%20de%20la%20Union%20Europea/Paginas/default.aspx"><img
-            src="../../../img/logos/Fondos Europeos.png" alt="Fondos Europeos"></a>
-
-        <a href="#"><img src="../../../img/logos/Nueva Vida.png" alt="Nueva Vida"></a>
+        <div class="d-flex flex-column patrocinadores2 gap-3">
+          <div class="d-flex flex-row gap-5 justify-content-center">
+            <!-- TODO: cambiar ruta -->
+            <a href="#"><img src="../../../img/logos/Logo_Deode.png" alt="Deode"></a>
+            <!-- TODO: cambiar ruta -->
+            <a href="#"><img src="../../../img/logos/LOGO_COLOR_Seidor.png" alt="Seidor"></a>
+            <!-- TODO: cambiar ruta -->
+            <a href="#"><img src="../../../img/logos/cit.png" alt="Cit"></a>
+            <!-- TODO: cambiar ruta -->
+            <a href="#"><img src="../../../img/logos/Infortec.png" alt="Infortec"></a>
+          </div>
+          <div class="d-flex flex-row gap-5 justify-content-center">
+            <a href="#"><img id="siali" src="../../../img/logos/Siali_tech.png" alt="Siali"></a>
+            <a href="#"><img src="../../../img/logos/Soincon.png" alt="Soincon"></a>
+            <a
+              href="https://www.hacienda.gob.es/es-ES/Areas%20Tematicas/Fondos%20de%20la%20Union%20Europea/Paginas/default.aspx"><img
+                src="../../../img/logos/fondos-europeos.png" alt="Fondos Europeos"></a>
+            <a href="#"><img src="../../../img/logos/Nueva Vida.png" alt="Nueva Vida"></a>
+          </div>
+        </div>
+      </div>
+      <!-- lo otro -->
+      <div class=" text-center">
+        <p>Apoyos al Proyecto</p>
+        <div class="d-flex flex-row gap-5 apoyos justify-content-center">
+          <a href="https://www.cantabria.es/"><img class="img-apoyo" src="../../../img/logos/Gobierno_de_Cantabria.png"
+              alt="Gobierno de Cantabria"></a>
+          <a href="https://www.educacionyfp.gob.es/portada.html"><img class="img-apoyo"
+              src="../../../img/logos/Ministerio de Educación y Formación Profesional.png"
+              alt="Ministerio de Educación y Formación Profesional"></a>
+          <a href="#"><img class="img-apoyo" src="../../../img/logos/IES_AUG.png" alt="IES AUG"></a>
+        </div>
       </div>
     </div>
 
-    <div class="row segunda text-center">
-      <div class="col">
-        <p>Apoyos al Proyecto </p>
-        <a href="https://www.cantabria.es/"><img src="../../../img/logos/Gobierno_de_Cantabria.png"
-            alt="Gobierno de Cantabria"></a>
-        <a href="https://www.educacionyfp.gob.es/portada.html"><img
-            src="../../../img/logos/Ministerio de Educación y Formación Profesional.png"
-            alt="Ministerio de Educación y Formación Profesional"></a>
 
-        <a href="#"><img src="../../../img/logos/IES_AUG.png" alt="IES AUG"></a>
-
-      </div>
+    <!-- RSS -->
+    <div class="row text-center cosas">
+      <p>2023 IES AUG - retoaglcup@gmail.com - <a href="#">Aviso Legal</a> - <a
+          href="http://localhost/Cup2024/reto-cup2024/noticia_torneo.xml"><img
+            src="../../../img/logos/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" /></a></p>
     </div>
-
-    <div class="row text-center">
-      <a ref="http://localhost/Cup2024/reto-cup2024/noticia_torneo.xml"><img
-          src="../../../img/logos/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" /></a>
-      <p>2023 IES AUG - retoaglcup@gmail.com - <a href="#">Aviso Legal</a></p>
-    </div>
-
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

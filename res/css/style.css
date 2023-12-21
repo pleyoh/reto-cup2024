@@ -10,7 +10,7 @@
   /* --(nombre generico de la app)-sys-propiedad: red; */
 
   /* colores */
-  --cup-primary: #ec461d;
+  --cup-primary: #d83c15;
   --cup-secondary: #303436;
   --cup-body-bg: #dcdad7;
   --cup-black: #000;
@@ -21,6 +21,10 @@
   /* fuentes */
   --cup-font-family: "Nunito";
   --cup-font-family-title: "Bebas Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* cosas de CSS y tal */
@@ -52,25 +56,6 @@ body a {
   background-color: #dcdad7 !important;
 }
 
-.btn-ong {
-  background: #ec461d !important;
-  color: #ffffff !important;
-  width: 100px;
-  height: 60px;
-  font-size: x-large !important;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 60%;
-}
-
-.btn-ong:hover {
-  background: #ff3300 !important;
-  color: #ffffff !important;
-  width: 100px;
-  height: 60px;
-  font-size: x-large;
-}
-
 .patrocinadores1 div a img {
   height: auto;
   max-height: 50px;
@@ -78,14 +63,14 @@ body a {
 
 main {
   margin: 0 auto;
-  width: 80%;
+  /* width: 80%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 5%;
+  /* padding: 0px 5%; */
 }
 
-main>* {
+main > * {
   margin: auto;
 }
 
@@ -98,8 +83,35 @@ main>* {
 }
 
 /** media-queries */
+@media (max-width: 500px) {
+  .patrocinadores1 div span a img {
+    height: 25px;
+  }
 
-@media (max-width: 1400px) {
+  .portada h1 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (max-width: 767.5px) {
+  .patrocinadores2 div a img {
+    height: 15px !important;
+  }
+
+  .apoyos a .img-apoyo {
+    height: 25px !important ;
+  }
+
+  .cosas {
+    font-size: 0.7rem;
+  }
+
+  .cosas img {
+    height: 10px !important;
+  }
+}
+
+@media (max-width: 1199.5px) {
   .patrocinadores1 div a img {
     height: auto;
     max-height: 30px;
@@ -124,6 +136,14 @@ main>* {
 
   .dropdown-menu {
     border: none !important;
+  }
+
+  .patrocinadores2 div a img {
+    height: 28px;
+  }
+
+  .apoyos a img {
+    height: 38px !important;
   }
 }
 
@@ -188,31 +208,25 @@ footer .segunda img {
 }
 
 .portada .negrura {
+  padding-right: 2rem;
   display: block;
   width: 100%;
   height: 500px;
   background: rgba(30, 10, 0, 0.281);
   background-size: cover;
-  align-items: end;
 }
 
 .portada:hover .negrura {
-  display: block;
-  width: 100%;
-  height: 500px;
   background: rgba(30, 10, 0, 0.25);
-  background-size: cover;
 }
 
 .portada h1 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 3.3rem;
-  text-align: end;
-  margin: 0 0 0 auto;
   margin-top: 3rem;
-  padding-right: 25rem;
   padding-left: 1rem;
   width: 20%;
+
   border-left: black 5px solid;
   color: black;
 }
@@ -224,6 +238,21 @@ footer .segunda img {
 
 .portada a {
   font-family: "Nunito";
+}
+
+.btn-ong {
+  background: #d83c15 !important;
+  color: #ffffff !important;
+  width: 120px;
+  height: 60px;
+  font-size: x-large !important;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-ong:hover {
+  background: #eb4015 !important;
+  color: #ffffff !important;
 }
 
 /** Para las paginas de colaboradores */
@@ -268,7 +297,7 @@ footer .segunda img {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .patrocinadores1 div span {
@@ -277,38 +306,22 @@ footer .segunda img {
   gap: 3rem;
 }
 
-/* Pagina de Aviso Legal */
-.avisolegal:nth-child(odd) {
-  background-color: white;
+.apoyos a img {
+  height: 60px;
 }
 
-.avisolegal:nth-child(even) {
-  background-color: #f8f9fa;
+.patrocinadores2 a img {
+  height: 50px;
 }
 
-.avisolegal p {
-  border-left: 2px black solid;
+.cosas img {
+  height: 15px;
 }
 
-/* Pagina de OGS */
+.carousel-inner {
+  min-width: 300px !important;
 
-.fondo-ods:nth-of-type(1) {
-  height: 200px;
-  background-color: #e02b40;
-  transition: 0.2s;
-}
+  max-width: 800px !important;
 
-.fondo-ods:nth-of-type(2) {
-  height: 200px;
-  background-color: #d19f2a;
-}
-
-.fondo-ods:nth-of-type(3) {
-  height: 200px;
-  background-color: #4c9f38;
-}
-
-.fondo-ods p{
-  color: white;
-  font-weight: bolder;
+  max-height: 500px !important;
 }
