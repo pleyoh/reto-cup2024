@@ -72,6 +72,7 @@ function crearTabla(data) {
 
     // Constantes para crear elementos de tabla
     const table = document.createElement('table');
+    table.classList.add('no-border-table'); 
     const thead = document.createElement('thead');
     const tbody = document.createElement('tbody');
 

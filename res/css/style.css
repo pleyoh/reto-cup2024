@@ -327,7 +327,7 @@ footer .segunda img {
   max-width: 50%;
   width: fit-content;
   margin: 20px auto;
-  box-shadow: #3a3f41 5px 5px 15px;
+  box-shadow: var(--cup-secondary) 5px 5px 15px;
 }
 
 .card-body {
@@ -444,15 +444,44 @@ footer .segunda img {
 .equipo-card {
   height: fit-content !important;
   text-align: center;
+  background: none !important;
+  border: none !important;
+}
+
+.equipo-card .card-body {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: -40px;
+  padding: 20px 20px 0px 20px;
+  z-index: 1;
 }
 
 .equipo-card a {
   text-decoration: none;
   color: var(--cup-white);
+  transition: 0.2s;
 }
 
 .equipo-card img {
-  max-width: 80% !important;
+  border: 10px var(--cup-secondary) solid;
+  max-width: 100% !important;
+  z-index: 2;
+  transition: 0.2s;
+}
+
+.equipo-card:hover a, .equipo-card:hover h5{
+  color: var(--cup-dark);
+}
+
+.equipo-card:hover img{
+  border-color: var(--cup-white);
+  color: var(--cup-dark);
+  box-shadow: var(--cup-white);
+}
+
+.equipo-card:hover .card-body{
+  background-color: var(--cup-white);
 }
 
 /* Listado de jugadores */
