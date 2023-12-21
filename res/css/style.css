@@ -23,23 +23,25 @@
   --cup-font-family-title: "Bebas Neue", sans-serif;
 }
 
-::-webkit-scrollbar {
-  width: 10px !important;
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #777777;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1 !important;
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888 !important;
+*::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555 !important;
+*::-webkit-scrollbar-thumb {
+  background-color: #777777;
+  border-radius: 10px;
 }
 
 * {
