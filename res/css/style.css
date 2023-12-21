@@ -421,3 +421,17 @@ footer .segunda img {
 .redes {
   margin-left: 1.5rem;
 }
+
+/* Lista de equipos */
+.listado-equipos{
+  justify-content: space-evenly;
+}
+
+.equipo-card{
+  height: fit-content !important;
+  text-align: center;
+}
+
+.equipo-card img{
+  max-width: 80% !important;
+}
