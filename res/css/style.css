@@ -202,7 +202,7 @@ footer {
   overflow: hidden;
 }
 
-#siali {
+.siali {
   background: var(--cup-secondary);
 }
 
@@ -423,15 +423,15 @@ footer .segunda img {
 }
 
 /* Lista de equipos */
-.listado-equipos{
+.listado-equipos {
   justify-content: space-evenly;
 }
 
-.equipo-card{
+.equipo-card {
   height: fit-content !important;
   text-align: center;
 }
 
-.equipo-card img{
+.equipo-card img {
   max-width: 80% !important;
 }
