@@ -202,7 +202,7 @@ footer {
   overflow: hidden;
 }
 
-#siali {
+.siali {
   background: var(--cup-secondary);
 }
 
@@ -263,6 +263,21 @@ footer .segunda img {
 
 .portada a {
   font-family: "Nunito";
+}
+
+.btn-enviar {
+  background: var(--cup-primary) !important;
+  color: #ffffff !important;
+  width: 80px;
+  height: 40px;
+  font-size: large !important;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-enviar:hover {
+  background: #eb4015 !important;
+  color: #ffffff !important;
 }
 
 .btn-ong {
@@ -428,10 +443,12 @@ footer .segunda img {
 }
 
 .equipo-card {
+.equipo-card {
   height: fit-content !important;
   text-align: center;
 }
 
+.equipo-card img {
 .equipo-card img {
   max-width: 80% !important;
 }
