@@ -124,6 +124,20 @@ main > * {
   flex-flow: row;
 }
 
+.ods-texto {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.ods-texto p {
+  max-height: 182px !important;
+  overflow-y: auto !important;
+}
+
+.ods-texto img {
+  max-width: 182px !important;
+}
+
 @media (max-width: 1199.5px) {
   .torneo div {
     display: flex;
