@@ -224,12 +224,12 @@ footer .segunda img {
   width: 100%;
   background: url("../img/fotografias/copa/Portada.jpg") no-repeat;
   background-size: cover;
-  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: end !important;
   padding: 0 !important;
   cursor: pointer;
+  max-height: 500px;
 }
 
 .portada .negrura {
@@ -282,7 +282,7 @@ footer .segunda img {
 
 /* Sobre el torneo, abajo de portada. */
 .torneo {
-  background-color: var(--cup-white);
+  background-color: var(--cup-light);
 }
 
 .torneo p {
