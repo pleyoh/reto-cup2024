@@ -70,7 +70,7 @@ main {
   /* padding: 0px 5%; */
 }
 
-main>* {
+main > * {
   margin: auto;
 }
 
@@ -271,11 +271,11 @@ footer .segunda img {
 }
 
 /* Sobre el torneo, abajo de portada. */
-.torneo{
+.torneo {
   background-color: var(--cup-white);
 }
 
-.torneo p{
+.torneo p {
   padding-left: 2.5em;
   border-left: 5px var(--cup-black) solid;
   overflow-y: auto;
