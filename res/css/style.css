@@ -27,6 +27,14 @@
   box-sizing: border-box;
 }
 
+h5 {
+  font-family: "Bebas Neue", sans-serif !important;
+
+  margin-bottom: 20px;
+
+  padding-left: 20px;
+  border-left: 4px black solid;
+}
 /* cosas de CSS y tal */
 body {
   background-color: var(--cup-body-bg) !important;
