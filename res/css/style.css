@@ -70,7 +70,7 @@ main {
   /* padding: 0px 5%; */
 }
 
-main>* {
+main > * {
   margin: auto;
 }
 
@@ -119,7 +119,17 @@ main>* {
   }
 }
 
+.torneo div {
+  display: flex;
+  flex-flow: row;
+}
+
 @media (max-width: 1199.5px) {
+  .torneo div {
+    display: flex;
+    flex-flow: column;
+  }
+
   .redes {
     margin-left: 0 !important;
   }
@@ -214,12 +224,12 @@ footer .segunda img {
   width: 100%;
   background: url("../img/fotografias/copa/Portada.jpg") no-repeat;
   background-size: cover;
-  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: end !important;
   padding: 0 !important;
   cursor: pointer;
+  max-height: 500px;
 }
 
 .portada .negrura {
@@ -271,11 +281,11 @@ footer .segunda img {
 }
 
 /* Sobre el torneo, abajo de portada. */
-.torneo{
-  background-color: var(--cup-white);
+.torneo {
+  background-color: var(--cup-light);
 }
 
-.torneo p{
+.torneo p {
   padding-left: 2.5em;
   border-left: 5px var(--cup-black) solid;
   overflow-y: auto;
@@ -376,8 +386,8 @@ footer .segunda img {
 }
 
 .card-text {
-  max-height: 200px !important;
-  overflow-y: scroll;
+  max-height: 220px !important;
+  overflow-y: auto;
 }
 
 .contenedor-colaboradores {

@@ -130,11 +130,12 @@
   </header>
 
   <main class="principal">
-    <div class="row mt-4">
-      <div class="col">
+    <div class="contenedor-colaboradores d-flex flex-row  justify-content-center align-items-center">
+
+      <div>
         <div class="card">
           <!-- imagen -->
-          <img src="../../../img/logos/Infortec.png" alt="Infortec">
+          <img style="width: 100px;" src="../../../img/logos/Infortec.png" alt="Logo Peñacastillo">
           <div class="card-body">
             <!-- titulo -->
             <h5 class="card-title"><strong>Infortec</strong></h5>
@@ -165,8 +166,7 @@
         </div>
       </div>
 
-      <div class="col-6 carrusel align-self-center">
-        <!-- Deslizador de imagenes -->
+      <div class="contenedor-colaboradores-carusel">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
             <!-- Agregar un boton nuevo por cada imagen nueva, aumentar los contadores de 'data-bs-slide-to' y 'aria-label' -->
@@ -176,18 +176,19 @@
               aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
               aria-label="Slide 3"></button>
+
           </div>
           <div class="carousel-inner">
             <!-- Imagen inicial -->
             <div class="carousel-item active">
-              <img src="../../../img/empresas/infortec/Infortec1.jpg" class="d-block w-100" alt="Infortec">
+              <img src="../../../img/empresas/infortec/Infortec1.jpg" class="d-block w-100" alt="Imagen1">
             </div>
             <!-- Agregar las imagenes que hagan falta copiando este div y modificando el src del img -->
             <div class="carousel-item">
-              <img src="../../../img/empresas/infortec/Infortec2.jpg" class="d-block w-100" alt="Infortec">
+              <img src="../../../img/empresas/infortec/Infortec2.jpg" class="d-block w-100" alt="Imagen2">
             </div>
             <div class="carousel-item">
-              <img src="../../../img/empresas/infortec/Infortec3.jpg" class="d-block w-100" alt="Infortec">
+              <img src="../../../img/empresas/infortec/Infortec3.jpg" class="d-block w-100" alt="Imagen3">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -203,6 +204,7 @@
         </div>
       </div>
     </div>
+
   </main>
 
   <footer class="bg-body-tertiary mt-4">
