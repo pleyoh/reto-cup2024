@@ -396,7 +396,12 @@ footer .segunda img {
 }
 
 .card-body {
-  overflow-y: scroll !important;
+  overflow-y: hidden !important;
+}
+
+.card-text {
+  max-height: 220px !important;
+  overflow-y: auto;
 }
 
 .contenedor-colaboradores {
@@ -465,18 +470,17 @@ footer .segunda img {
   transition: 0.2s;
 }
 
-.equipo-card:hover a,
-.equipo-card:hover h5 {
+.equipo-card:hover a, .equipo-card:hover h5{
   color: var(--cup-dark);
 }
 
-.equipo-card:hover img {
+.equipo-card:hover img{
   border-color: var(--cup-white);
   color: var(--cup-dark);
   box-shadow: var(--cup-white);
 }
 
-.equipo-card:hover .card-body {
+.equipo-card:hover .card-body{
   background-color: var(--cup-white);
 }
 
