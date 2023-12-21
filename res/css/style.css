@@ -55,7 +55,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 5%;
+  /* padding: 0px 5%; */
 }
 
 main > * {
