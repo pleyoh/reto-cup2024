@@ -139,6 +139,11 @@ main > * {
 }
 
 @media (max-width: 1199.5px) {
+  /* .team {
+    text-wrap: nowrap;
+    width: 80px !important;
+  } */
+
   .torneo div {
     display: flex;
     flex-flow: column;
