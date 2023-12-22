@@ -489,6 +489,10 @@ footer .segunda img {
   justify-content: space-evenly;
 }
 
+.listado-equipos a{
+  text-decoration: none;
+}
+
 .equipo-card {
   height: fit-content !important;
   text-align: center;
